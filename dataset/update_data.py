@@ -1,42 +1,45 @@
+from ast import parse
+from operator import index, indexOf
+from xml.sax import make_parser
 import pandas as pd
 import ffn
 import os
 import datetime as dt
-import parser
+from argparse import ArgumentParser
 
 # table = pd.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
 # print(table)
-PATH = "./src/stock_data/stock.csv"
 
+def make_parser():
+    parser = ArgumentParser()
+    parser.add_argument("-p", "--path", type = str, default="./src/stock_data/stock.csv")
+    parser.add_argument("-s", "--stock",type = str, default="SPY:Open,SPY:High,SPY:Low,SPY:Close,SPY" )
 
-def check_dir():
+    parser.add_argument('-d', '--date', type = lambda s: dt.datetime.strptime(s, '%Y-%m-%d'), 
+                                            default = dt.datetime(2022, 9, 10))
+
+    return parser
+
+def check_dir(args):
     if not os.path.isdir("./src"): os.mkdir("src")
     if not os.path.isdir("./src/stock_data"): os.mkdir("src/stock_data")
 
-def read_data(start_day = dt.datetime(2022, 9, 10), stock_name = ""):
-    stock_name = "SPY:Open,SPY:High,SPY:Low,SPY:Close,SPY"
-    if os.path.isfile(PATH):
-        stock = pd.read_csv(PATH)
+def read_data(args):
+    if os.path.isfile(args.path):
+        stock = pd.read_csv(args.path, index_col = 0).round(4)
+        stock.index = pd.to_datetime(stock.index)
+        new_stock = ffn.get(args.stock, start = stock.index[-1],).round(4)
+        stock = pd.concat([stock, new_stock]).drop_duplicates()
     else :
-        stock = ffn.get(stock_name, start = start_day)
+        stock = ffn.get(args.stock, start = args.date).round(4)
 
-    print(type(stock))
-    # nowday = dt.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-    # endday = stock.index[-1]
-    # if (nowday > endday) :
-    #     # 補日子
-    #     stock = ffn.get("SPY:Open,SPY:High,SPY:Low,SPY:Close,SPY", start=endday,)
-
-    stock.to_csv(PATH)
+    stock.to_csv(args.path, index=True)
 
     
-def main():
-    check_dir()
-    read_data()
+def main(args):
+    check_dir(args)
+    read_data(args)
 
 if __name__ == "__main__":
-    main()
-# df = table[0]
-# stockdata = df['Symbol'].to_list()
-# full_stock_data = ffn.get(stockdata, '2010-01-01', '2021-03-03')
-# print(full_stock_data['Volume'])
+    args = make_parser().parse_args()
+    main(args)
