@@ -7,7 +7,7 @@ from argparse import ArgumentParser
 def make_parser():
     parser = ArgumentParser()
     parser.add_argument("-p", "--path", type = str, default="./src/stock_data/stock.csv")
-    parser.add_argument("-s", "--stock",type = str, default="SPY:Open,SPY:High,SPY:Low,SPY:Close,SPY" )
+    parser.add_argument("-s", "--stock",type = str, default="META, AMZN, AAPL, NFLX, GOOG" )
     parser.add_argument('-d', '--date', type = lambda s: dt.datetime.strptime(s, '%Y-%m-%d'), 
                                             default = dt.datetime(2022, 9, 10))
     return parser
