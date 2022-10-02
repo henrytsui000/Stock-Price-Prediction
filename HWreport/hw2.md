@@ -30,5 +30,36 @@ $python update_date.py --date 20xx-xx-xx --force
 $python update_date.py -d 20xx-xx-xx -f
 ```
 
-# FAANG
+## FAANG
+FAANG, which is the abbreviation of Facebook, Apple, Amazon, Netflix and Google. The common point of these companies is all of them is about technology company. which is the most interested me combination of the stock market.
+
+All the analysis below it could find the draw method in [Here](../visulize/)!
+
+Because we should visualization the stock price and make it to a video, so this times we use seaborn, opencv-python, matplotlib.
+```python
+import ffn
+import pandas as pd
+import seaborn as sns
+import cv2
+import matplotlib.pyplot as plt
+import matplotlib
+import numpy as np
+```
+
+
+### Risk
+In this part, I wonder to calculate the stock's Risk. I define risk as the following formula: 
+
+$Risk(stock) = \sqrt{\Sigma_{i=D_{start}}^{D_{end}} \frac{(D_i-D_{i-1})^2}{n}}$
+
+$D_{start}$ := today, 
+
+$D_{end}$ := last year today, 
+
+$n$ := The day from $D_{end}$ to $D_{start}$
+
+Then we can deduce:
+
+$Risk(stock) = \sqrt{\frac{\Sigma_{i=D_{start}}^{D_{end}} (D_i-D_{i-1})^2}{n}} = \sqrt{2\frac{\Sigma_{i=D_{start}}^{D_{end}} D_i^2}{n}-2\Sigma_{i=D_{start}}^{D_{end}}D_iD_{i-1}}=\sqrt{2}\sqrt{(\frac{||D||_2^2}{n}+\Sigma_{i=D_{start}}^{D_{end}}D_iD_{i-1})}$
+
 ![](https://i.imgur.com/wjYecB1.gif)
