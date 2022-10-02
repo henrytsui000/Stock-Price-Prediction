@@ -60,6 +60,10 @@ $n$ := The day from $D_{end}$ to $D_{start}$
 
 Then we can deduce:
 
-$Risk(stock) = \sqrt{\frac{\Sigma_{i=D_{start}}^{D_{end}} (D_i-D_{i-1})^2}{n}} = \sqrt{2\frac{\Sigma_{i=D_{start}}^{D_{end}} D_i^2}{n}-2\Sigma_{i=D_{start}}^{D_{end}}D_iD_{i-1}}=\sqrt{2}\sqrt{(\frac{||D||_2^2}{n}+\Sigma_{i=D_{start}}^{D_{end}}D_iD_{i-1})}$
+![](https://i.imgur.com/uEcNKSu.png)
+
+(I use picture instead latex, because I don't know why the github can't show these progress)
+
+There is the table of risk function for each stock
 
 ![](https://i.imgur.com/wjYecB1.gif)
