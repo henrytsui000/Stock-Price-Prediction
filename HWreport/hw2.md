@@ -114,13 +114,16 @@ slide_windows(prices).iloc[-400:, :].rebase().plot()
 ```
 
 ![](../src/Recent2MonthPrice.png)
+
 2 months stock
 
 ![](../src/Recent1YearPrice.png)
+
 1.5 years stock
 
 ### Correlation
-The next thing is I think there must be a correlation in each stocks, so I made a gif indicate coreelation. The output is suprise me. All of the company have high correlation in period.
+The next thing is I think there must be a correlation in each stocks, so I made a gif indicate coreelation. The output is suprise me. All of the company have high correlation in period(we could see there is some dark blue square in the gif).
+It show that these company actually face the same problems or effect by same issue.
 
 each frame is $Day_i$ ~ $Day_{i+100}$ 
 
@@ -155,7 +158,7 @@ cv2.destroyAllWindows()
 ```
 
 ## Sum up / Future work
-In a nutshell, I write serveral code to analysis the stock data, special in the grow rate and the correlation with each others. I think the history price is not enough to predict the data in the future. Thus I would fuse the daily news, I think the method is give the title score represent positive/negative for the company.
+In short, I wrote multiple codes to analyze stock data, especially growth rates and correlations with each other. I don't think historical prices are enough to predict future data. So I would incorporate the daily news, and I think the approach would be to give headline scores to represent the positive/negative of the company.
 ![](../src/roberta.png)
 
 
