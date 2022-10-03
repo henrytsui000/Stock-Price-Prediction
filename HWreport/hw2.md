@@ -1,6 +1,7 @@
 Data Science HW2
 ===
 
+## [HOMEPAGE](../README.md)
 ## Introduction
 First of all, I choose to use markdown syntax to write this assignment, because in this assignment, I use python to analyze the relevant content of the assignment. The word format will make the entire layout very confusing when you put the code, and you cannot put dynamic files such as gif or mp4. In this case, I think MarkDown is more suitable (previously, I sent a letter to ask the professor if the format is not restricted)
 
@@ -76,8 +77,8 @@ There is the table of risk function for each stock
 
 Unfortunately, each stock doesn't have any apparent stock risk. But the accepted fact is that FAANG has really grown up in the past 6 years, especially the two new companies AMAZ and NFLX are the most unstable and are also bull markets.
 
-    Code explain
-    In the code block below, I will calculate the difference of stock first, and implement the Risk Function with pandas's Dataframe. Finally append it in to a Dataframe for make a table!
+#### Code explain
+In the code block below, I will calculate the difference of stock first, and implement the Risk Function with pandas's Dataframe. Finally append it in to a Dataframe for make a table!
 ```python3
 prices = pd.read_csv("../data/stock.csv", index_col=0)
 length = [100, 200, 500, 1000, 2000]
@@ -97,11 +98,60 @@ print(Risk_Table)
 
 ### Recent Years
 
-After I draw
-||2 months| 1 year |
+After I draw the price in 2 months and 1.5 years, I found that every stock has a big correlation with others.
+For example, META(FB) and GOOG(google) in recent 2 months totally have the same rate of ups and downs. It's intuitive, because there are same type of the company. So they face the same marketing problems.Another example is in 1.5 years figure, the would ups and downs in same time.
+
+The important thing is rebase function, we use this for reset the stock value with same start price. Thus, we can easier to observed the fluctuation.
+
+#### Code explain
+Thanks for FFN extension, I con't need to write the rebase function, and FFN also have a function named plot to print the figure on screen without matplotlib.
+
+```python
+def slide_windows(stock):
+    return stock.rolling(10).mean(std = 5)
+prices = pd.read_csv("../data/stock.csv", index_col=0)
+slide_windows(prices).iloc[-400:, :].rebase().plot()
+```
 
 ![](../src/Recent2MonthPrice.png)
-![](../src/Recent1YearPrice.png)
+2 months stock
 
+![](../src/Recent1YearPrice.png)
+1.5 years stock
+
+### Correlation
+The next thing is I think there must be a correlation in each stocks, so I made a gif indicate coreelation. The output is suprise me. All of the company have high correlation in period.
+
+each frame is $Day_i$ ~ $Day_{i+100}$ 
+
+for each 2022/1/1 to 2022/9/23
 
 ![](https://i.imgur.com/wjYecB1.gif)
+
+#### Code explain
+
+Actually, the hardest code implementation is this blocks. First of all, I make the heapmap which color-map is "YlGnBu". And save the figure in plot so on. Finally, transform the image to buffer that could resolve by cv2, so that can show on screen!
+
+```python
+offset = 100
+matplotlib.use('agg') 
+cnt = 0
+for i in range(-300, 0, 5):
+    heatmap = prices[i-offset:i].corr()
+    swarm_plot = sns.heatmap(heatmap, cmap="YlGnBu" , vmin=-1, vmax=1)
+    fig = swarm_plot.get_figure()
+
+    fig.canvas.draw()
+    img = np.frombuffer(fig.canvas.tostring_rgb(), dtype=np.uint8)
+    img  = img.reshape(fig.canvas.get_width_height()[::-1] + (3,))
+    img = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
+
+    plt.clf()
+    cv2.imshow("Heatmap", img)
+    cv2.imwrite(f"./out/{cnt:03d}.jpg", img)
+    cnt += 1
+    cv2.waitKey(1)
+cv2.destroyAllWindows()
+```
+
+## Sum up
