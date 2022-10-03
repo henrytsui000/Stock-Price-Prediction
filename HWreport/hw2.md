@@ -154,4 +154,12 @@ for i in range(-300, 0, 5):
 cv2.destroyAllWindows()
 ```
 
-## Sum up
+## Sum up / Future work
+In a nutshell, I write serveral code to analysis the stock data, special in the grow rate and the correlation with each others. I think the history price is not enough to predict the data in the future. Thus I would fuse the daily news, I think the method is give the title score represent positive/negative for the company.
+![](../src/roberta.png)
+
+
+## MOT dataset
+This is the dataset I introduced last homework, and I think the course to analysis 2D dataset is in the next month, So I decide to postpone the analysis to next assignment. 
+## MIMIC III
+Go through serveral day to apply the access of physionet. It show that need some day for audit mine identity. Thus, I can't analysis the dataset now.
