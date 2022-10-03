@@ -66,4 +66,42 @@ Then we can deduce:
 
 There is the table of risk function for each stock
 
+||meta  |goog   |    amzn   |    nflx   | aapl|
+|-|-|-|-|-|-|
+|100 |2.885279|2.318868| 3.271977|**4.041021**|2.143688|
+200 |**2.607665**|1.899779| 2.387325| 2.506661|1.857939|
+500| 2.832774|**3.045543**| 2.097889| 2.429130|2.394672|
+1000|3.981930|3.367472| 3.376081| 3.636639|**4.435451**|
+2000|5.943189|5.081090|13.596966|**16.554674**|7.147849|
+
+Unfortunately, each stock doesn't have any apparent stock risk. But the accepted fact is that FAANG has really grown up in the past 6 years, especially the two new companies AMAZ and NFLX are the most unstable and are also bull markets.
+
+    Code explain
+    In the code block below, I will calculate the difference of stock first, and implement the Risk Function with pandas's Dataframe. Finally append it in to a Dataframe for make a table!
+```python3
+prices = pd.read_csv("../data/stock.csv", index_col=0)
+length = [100, 200, 500, 1000, 2000]
+Risk_Table = pd.DataFrame(columns=prices.columns)
+
+for l in length:
+    test = prices.iloc[-l:].rebase()
+    Dnext = test[ 1:].reset_index(drop=True)
+    Dthis = test[:-1].reset_index(drop=True)
+    Risk_each_day = (Dnext - Dthis)**2
+    Risk_square = Risk_each_day.sum(axis=0)/test.shape[0]
+    Risk = Risk_square**(1/2)
+    Risk.name = f"{l}"
+    Risk_Table = pd.concat([Risk_Table, Risk.to_frame().T])
+print(Risk_Table)
+```
+
+### Recent Years
+
+After I draw
+||2 months| 1 year |
+
+![](../src/Recent2MonthPrice.png)
+![](../src/Recent1YearPrice.png)
+
+
 ![](https://i.imgur.com/wjYecB1.gif)
