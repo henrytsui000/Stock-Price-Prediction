@@ -116,12 +116,32 @@ def INTER(sdm, mask, func = interp1d):
 ```
 
 ## Method of Interpolation
-The first is the analysis of various interpolation methods. I compared interp1d, UnivariateSpline, Rbf, make_interp_spline, LinearRegression several methods, because linear regression has a lot of errors, so I will first list him in the chart, in the same Loss- In date, you can see that the common interpolation method such as interp1d is better, and I will introduce other interpolation methods in the next paragraphs, but I will use interp1d as the default interpolation method in the following comparisons.
+The first is the analysis of various interpolation methods. I compared the methods of interp1d, UnivariateSpline, Rbf, make_interp_spline, and LinearRegression. Because there are many errors in linear regression, I will not list them all in the first chart, but in the Loss-date chart of the same stock. It can be seen that the commonly used interpolation methods such as interp1d are better. I will introduce other interpolation methods in the next paragraphs, but I will use interp1d as the default interpolation method in the following comparison.
 
-The first is why Linear regression is so bad. I think this reason is very obvious, because we can't describe the data of several years with a $y=ax+b$, and it will need more polynomials to represent it. However, when we reduce the time to about 10 days, we can see that the Loss of linear regression gradually decreases, approaching other inner difference methods. As you differentiate a polynomial interval, the tangent will fit the interval better (compared to the full function).
+## Rbf
+**these two part is refer from wiki**
+
+Radial basis function (RBF) interpolation is an advanced method in approximation theory for constructing high-order accurate interpolants of unstructured data, possibly in high-dimensional spaces. The interpolant takes the form of a weighted sum of radial basis functions, like for example Gaussian distributions. RBF interpolation is a mesh-free method, meaning the nodes (points in the domain) need not lie on a structured grid, and does not require the formation of a mesh. It is often spectrally accurate and stable for large numbers of nodes even in high dimensions.
+
+Many interpolation methods can be used as the theoretical foundation of algorithms for approximating linear operators, and RBF interpolation is no exception. RBF interpolation has been used to approximate differential operators, integral operators, and surface differential operators.
+
+## Spline
+**these two part is refer from wiki**
+In mathematics, a spline is a special function defined piecewise by polynomials. In interpolating problems, spline interpolation is often preferred to polynomial interpolation because it yields similar results, even when using low degree polynomials, while avoiding Runge's phenomenon for higher degrees.
+
+In the computer science subfields of computer-aided design and computer graphics, the term spline more frequently refers to a piecewise polynomial (parametric) curve. Splines are popular curves in these subfields because of the simplicity of their construction, their ease and accuracy of evaluation, and their capacity to approximate complex shapes through curve fitting and interactive curve design.
+
+The term spline comes from the flexible spline devices used by shipbuilders and draftsmen to draw smooth shapes.
+
+
+### Linear Regression
+The first is why Linear regression is so terrible. I think this reason is very obvious, because we can't describe the data of several years with a $y=ax+b$, and it will need more polynomials to represent it. However, when we reduce the time to about 10 days, we can see that the Loss of linear regression gradually decreases, approaching other inner difference methods. As you differentiate a polynomial interval, the tangent will fit the interval better (compared to the full function).
+
 ![](./../src/mask_difi.png)
 
 ![](./../src/mask_difii.png)
+
+## 
 
 ## Risk & Mask
 Next, let's discuss Risk and Mask. In the last homework, I mentioned a Risk function, which can measure the volatility and change of a stock. It is conceivable that volatility will affect the predictability of a missing stock, which will make Mask's Error larger.
@@ -138,10 +158,12 @@ This also explains why the mask and risk of the two stocks are sometimes very si
 ## Mask Percent & Mask Loss
 
 A very trivial property is that the higher the Mask ratio, the lower the correct rate and the higher the Loss. However, I still did an experiment to verify this. Unexpectedly, the growth rate of Loss was much lower than expected. The fact is that when the coverage rate is 50%, Loss is less than double that of 10%, which proves the linear inner difference. In fact, it is not a bad method of inner difference, and sometimes it can effectively solve the problem of missing data.
+
 ![](./../src/mask_difp.png)
 
 ## Other works
 In the last homework, I mentioned that I plan to incorporate the FAANG news into the forecasting model, so I wrote a script this week to get the daily stock market news through the API, just like updating the stock price before, I will put him In an efficient way [HW1](./HW1_109511068.pdf) written in my own data set, the detailed code can be found [here](../tools/update_new.ipynb). If the next job needs or has free time, I will finish importing it into the pretrained BERT model to calculate the statement score. The focus of this assignment is to supplement the missing data, so I will wait for the completion of the BERT encode, and then introduce my overall approach.
+
 ![](../src/api_icon.png)
 
 ## Sum up / Future work
