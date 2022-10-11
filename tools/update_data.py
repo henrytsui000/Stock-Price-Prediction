@@ -7,7 +7,7 @@ from argparse import ArgumentParser
 
 def make_parser():
     parser = ArgumentParser()
-    parser.add_argument("-p", "--path", type = str, default="./data/stock.csv")
+    parser.add_argument("-p", "--path", type = str, default="./data/Stock/stock.csv")
     parser.add_argument("-s", "--stock",type = str, default="META, GOOG, AMZN, NFLX, AAPL" )
     parser.add_argument("-f", "--force", action="store_false")
     parser.add_argument('-d', '--date', type = lambda s: dt.datetime.strptime(s, '%Y-%m-%d'), 
@@ -16,6 +16,7 @@ def make_parser():
 
 def check_dir():
     if not os.path.isdir("./data"): os.mkdir("./data")
+    if not os.path.isdir("./data/Stock"): os.mkdir("./data/Stock")
 
 def read_data(args):
     if os.path.isfile(args.path) and args.force :
