@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 from argparse import ArgumentParser
 
 find_mask = lambda array : np.nonzero(array)[0]
-DIS = lambda ground, inter : np.around(np.sum(np.abs(ground-inter)), decimals = 2)
+LOSS = lambda ground, inter : np.around(np.sum(np.abs(ground-inter)), decimals = 2)
 inter_func = {"interp1d": interp1d,
               "UnivariateSpline" : UnivariateSpline, 
               "Rbf" : Rbf, 
@@ -57,7 +57,8 @@ def LR(sdm, mask):
     return np.around(sdm, decimals=2)
 
 def main(args, SD, SDM, MASK, title):
-    stock_avg = np.mean(SD, axis=0)
+    # Normalization Factor
+    NF = np.mean(SD, axis=0)*args.date*args.mask/100
     loss_table = pd.DataFrame(columns=title, index=[])
     for inter_name, func in inter_func.items():
         loss_queue = dict()
@@ -66,11 +67,11 @@ def main(args, SD, SDM, MASK, title):
                 inter_res = LR(SDM[:, col].copy(), MASK[:, col].copy())
             else:
                 inter_res = INTER(SDM[:, col].copy(), MASK[:, col].copy(), func)
-            inter_dis = DIS(SD[:, col], inter_res)
-            loss_queue[col_name] = inter_dis
+            inter_loss = LOSS(SD[:, col], inter_res)
+            loss_queue[col_name] = inter_loss
         loss_queue = pd.DataFrame(loss_queue, columns=title, index=[inter_name])
         loss_table = pd.concat([loss_table, loss_queue])
-    loss_table = loss_table.div(stock_avg, axis=1)
+    loss_table = loss_table.div(NF, axis=1)
     print(loss_table)
 
 if __name__ == "__main__":

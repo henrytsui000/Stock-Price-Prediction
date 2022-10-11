@@ -9,7 +9,7 @@ I chose to continue using markdown for this assignment because its convenient em
 
 ## Environment
 
-Inherit from the last job, this time no new environment is required, the only thing changed is to install scipy and sklearn. And pull the repo to local.
+Base on the last job, this time no new environment is required, the only thing changed is to install scipy and sklearn. And pull the repo to local.
 
 ```sh
 $conda activate IDS
@@ -30,164 +30,79 @@ To simulate missing data, I chose to randomly mask out a fixed percentage of the
 
 ## Masking data
 
-The program I wrote can be found [here](../tools/fill_up.py). The first is the masking data I mentioned earlier. I choose to set a P to indicate how many percent of the data I want to mask, and use np.random.choice to make a NxM matrix, containing P True.
+The program I wrote can be found [here](../tools/fill_up.py). The first is the masking data I mentioned earlier. I choose to set a $p$ to indicate how many percent of the data I want to mask, and use np.random.choice to make a NxM matrix, containing $p％$ True.
+At the same time, I think it would be a wise decision to hollow out by myself, because it can be used as a validation through masking, just like training a neural network. By knowing the outcome of each interpolation method or each interval, the decision is made which method to use.
 
-### Update Data
-
-This is the code I mentioned in my last assignment, you can use the following command to update the stock market data under the data folder
-
-```bash
-$python update_data.py
-```
-
-By default, the python code will append the new data in the end of the data.csv, but you can use the command like this to specific start date or force to reload all the data(but it would cost more time than default mode)
-
-```bash
-$python update_date.py --date 20xx-xx-xx --force
-$python update_date.py -d 20xx-xx-xx -f
-```
-
-## FAANG
-
-FAANG, which is the abbreviation of Facebook, Apple, Amazon, Netflix and Google. The common point of these companies is all of them is about technology company. which is the most interested me combination of the stock market.
-
-All the analysis below it could find the draw method in [Here](../visulize/)!
-
-Because we should visualization the stock price and make it to a video, so this times we use seaborn, opencv-python, matplotlib.
-
-```python
-import ffn
-import pandas as pd
-import seaborn as sns
-import cv2
-import matplotlib.pyplot as plt
-import matplotlib
-import numpy as np
-```
-
-### Risk
-
-In this part, I wonder to calculate the stock's Risk. I define risk as the following formula:
-
-$Risk(stock) = \sqrt{\Sigma_{i=D_{start}}^{D_{end}} \frac{(D_i-D_{i-1})^2}{n}}$
-
-$D_{start}$ := today,
-
-$D_{end}$ := last year today,
-
-$n$ := The day from $D_{end}$ to $D_{start}$
-
-Then we can deduce:
-
-![](https://i.imgur.com/uEcNKSu.png)
-
-(I use picture instead latex, because I don't know why the github can't show these progress)
-
-There is the table of risk function for each stock
-
-|      | meta               | goog               | amzn      | nflx                | aapl               |
-| ---- | ------------------ | ------------------ | --------- | ------------------- | ------------------ |
-| 100  | 2.885279           | 2.318868           | 3.271977  | **4.041021**  | 2.143688           |
-| 200  | **2.607665** | 1.899779           | 2.387325  | 2.506661            | 1.857939           |
-| 500  | 2.832774           | **3.045543** | 2.097889  | 2.429130            | 2.394672           |
-| 1000 | 3.981930           | 3.367472           | 3.376081  | 3.636639            | **4.435451** |
-| 2000 | 5.943189           | 5.081090           | 13.596966 | **16.554674** | 7.147849           |
-
-Unfortunately, each stock doesn't have any apparent stock risk. But the accepted fact is that FAANG has really grown up in the past 6 years, especially the two new companies AMAZ and NFLX are the most unstable and are also bull markets.
-
-#### Code explain
-
-In the code block below, I will calculate the difference of stock first, and implement the Risk Function with pandas's Dataframe. Finally append it in to a Dataframe for make a table!
+### Code explain
+nd.random.choice is the function which I mention before. Through np.ma.mask, two matrices (numeric matrix and Boolean matrix) can be given as masks to remind me which positions are missing by my simulation.
+It would return:
+- SD : Stock Data
+- SDM : Stock Data Masked
+- MASK : bool martix, which position is masked
+- title : Inherit read_data, the stock names  
 
 ```python3
-prices = pd.read_csv("../data/stock.csv", index_col=0)
-length = [100, 200, 500, 1000, 2000]
-Risk_Table = pd.DataFrame(columns=prices.columns)
+def mask_data(args, SD, title):
+    # SDM stock_data_masked
+    mask_percent = args.mask
+    SD = SD.to_numpy()
+    SDM = SD.copy()
 
-for l in length:
-    test = prices.iloc[-l:].rebase()
-    Dnext = test[ 1:].reset_index(drop=True)
-    Dthis = test[:-1].reset_index(drop=True)
-    Risk_each_day = (Dnext - Dthis)**2
-    Risk_square = Risk_each_day.sum(axis=0)/test.shape[0]
-    Risk = Risk_square**(1/2)
-    Risk.name = f"{l}"
-    Risk_Table = pd.concat([Risk_Table, Risk.to_frame().T])
-print(Risk_Table)
+    MASK = np.random.choice([True, False], size=SDM.shape, p=[mask_percent, 1-mask_percent])
+    MASK[0, :] = MASK[-1, :] = False
+    SDM = np.ma.masked_array(SDM, mask=MASK)
+    return SD, SDM, MASK, title
 ```
 
-### Recent Years
+## Definition of Loss
 
-After I draw the price in 2 months and 1.5 years, I found that every stock has a big correlation with others.
-For example, META(FB) and GOOG(google) in recent 2 months totally have the same rate of ups and downs. It's intuitive, because there are same type of the company. So they face the same marketing problems.Another example is in 1.5 years figure, the would ups and downs in same time.
+It is important to define an evaluation for various imputation of missing values. We know that the amount of missing data will be $fac = D\cdot p$, which $D$ is the number of days, $p$ is the mask ratio. The error of one stock is $Loss(stock) = \sum^{D}_{i}{SD_i-SDM_i}$
+Thus the Loss function could be:
 
-The important thing is rebase function, we use this for reset the stock value with same start price. Thus, we can easier to observed the fluctuation.
+$\widehat{Loss}=\frac{Loss}{fac} = \frac{\sum^{D}_{i}{SD_i-SDM_i}}{D\cdot p}$
 
-#### Code explain
+This formula can be used to measure whether different interpolation methods are accurate for the same stock.
+But the next problems come out, there is a lot of different in each stock:
+|method|meta|goog| amzn| nflx| aapl|
+|-|-|-|-|-|-|
+|interp1d|1400.98|449.24| 676.23|3183.65| 531.46|
 
-Thanks for FFN extension, I con't need to write the rebase function, and FFN also have a function named plot to print the figure on screen without matplotlib.
+The reason why is obvious, because different stocks have different bases, so there will be differences in multiples when making up the difference, and the way to solve this problem is to divide their Loss by the average of the stock price:
+
+$\widetilde{Loss} = \frac{\widehat{Loss}}{stock_{avg}} =  \frac{\sum^{D}_{i}{SD_i-SDM_i}}{D\cdot p \cdot stock_{avg}}$
+
+Finally, the loss of these stock is fair:
+|method|meta|goog| amzn| nflx| aapl|
+|-|-|-|-|-|-|
+|interp1d|1.462%|1.261%| 1.636%|1.817%| 1.351%|
+
+
+### Code explain
+Via lambda function, we can define the loss function, and the Normalization Factor(NF) could calculate by numpy function.
 
 ```python
-def slide_windows(stock):
-    return stock.rolling(10).mean(std = 5)
-prices = pd.read_csv("../data/stock.csv", index_col=0)
-slide_windows(prices).iloc[-400:, :].rebase().plot()
+LOSS = lambda ground, inter : np.around(np.sum(np.abs(ground-inter)), decimals = 2)
+NF = np.mean(SD, axis=0)*args.date*args.mask/100
+loss_table = loss_table.div(NF, axis=1)
 ```
 
-![](../src/Recent2MonthPrice.png)
+## Method of Interpolation
+Thanks for scipy, it extension provide me a easy way to call out interpolation function. The function call by these steps:
+1. define the interpolation function by known pair(x, y).
+2. Give the function which point(x) is missed.
+3. Fill in the value which is predicted.
 
-2 months stock
 
-![](../src/Recent1YearPrice.png)
-
-1.5 years stock
-
-### Correlation
-
-The next thing is I think there must be a correlation in each stocks, so I made a gif indicate coreelation. The output is suprise me. All of the company have high correlation in period(we could see there is some dark blue square in the gif).
-It show that these company actually face the same problems or effect by same issue.
-
-each frame is $Day_i$ ~ $Day_{i+100}$
-
-for each 2022/1/1 to 2022/9/23
-
-![](https://i.imgur.com/wjYecB1.gif)
-
-#### Code explain
-
-Actually, the hardest code implementation is this blocks. First of all, I make the heapmap which color-map is "YlGnBu". And save the figure in plot so on. Finally, transform the image to buffer that could resolve by cv2, so that can show on screen!
-
-```python
-offset = 100
-matplotlib.use('agg') 
-cnt = 0
-for i in range(-300, 0, 5):
-    heatmap = prices[i-offset:i].corr()
-    swarm_plot = sns.heatmap(heatmap, cmap="YlGnBu" , vmin=-1, vmax=1)
-    fig = swarm_plot.get_figure()
-
-    fig.canvas.draw()
-    img = np.frombuffer(fig.canvas.tostring_rgb(), dtype=np.uint8)
-    img  = img.reshape(fig.canvas.get_width_height()[::-1] + (3,))
-    img = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
-
-    plt.clf()
-    cv2.imshow("Heatmap", img)
-    cv2.imwrite(f"./out/{cnt:03d}.jpg", img)
-    cnt += 1
-    cv2.waitKey(1)
-cv2.destroyAllWindows()
+```python3
+find_mask = lambda array : np.nonzero(array)[0]
+def INTER(sdm, mask, func = interp1d):
+    y_axis = np.delete(sdm, mask)
+    interp_func = func(find_mask(~mask), y_axis)
+    mask_val = interp_func(find_mask(mask))
+    sdm[find_mask(mask)] = mask_val
+    return np.around(sdm, decimals=2)
 ```
+
+
 
 ## Sum up / Future work
-
-In short, I wrote multiple codes to analyze stock data, especially growth rates and correlations with each other. I don't think historical prices are enough to predict future data. So I would incorporate the daily news, and I think the approach would be to give headline scores to represent the positive/negative of the company.
-![](../src/roberta.png)
-
-## MOT dataset
-
-This is the dataset I introduced last homework, and I think the course to analysis 2D dataset is in the next month, So I decide to postpone the analysis to next assignment.
-
-## MIMIC III
-
-Go through serveral day to apply the access of physionet. It show that need some day for audit mine identity. Thus, I can't analysis the dataset now.

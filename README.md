@@ -6,7 +6,7 @@ This is a project about my data science course, the main idea is a AI model thro
 You can find the report in this table.
 ||HW1|HW2|HW3|
 |-|-|-|-|
-|Link|[PDF](./HWreport/HW1_109511068.pdf)|[MD](./HWreport/hw2.md)|[In Progress]()||
+|Link|[PDF](./HWreport/HW1_109511068.pdf)|[MD](./HWreport/hw2.md)|[MD](./HWreport/hw3.md)||
 
 
 # Experiment
