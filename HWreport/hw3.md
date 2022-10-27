@@ -23,11 +23,11 @@ $git pull git@github.com:henrytsui000/DataScienceProject.git
 FAANG, which is the abbreviation of Facebook, Apple, Amazon, Netflix and Google. The common point of these companies is all of them is about technology company. Which is the most interested me combination of the stock market.
 
 ### Missing data
+
 The most fatal thing in the dataset is missing data, which will affect the training of the model. For example, the dataloader will input nan. Usually I choose to drop missing data directly in computer vision, but this problem becomes tricky when the data becomes linear, because linear data cannot have any discontinuities.
 
 Luckily I didn't have missing values for the stock market price I chose, the only thing being that it was closed on weekends, but I guess that's not too important.
 To simulate missing data, I chose to randomly mask out a fixed percentage of the data. And supplement the data with common methods in a variety of ways.
-
 
 ## Masking data
 
@@ -35,12 +35,14 @@ The program I wrote can be found [here](../tools/fill_up.py). The first is the m
 At the same time, I think it would be a wise decision to hollow out by myself, because it can be used as a validation through masking, just like training a neural network. By knowing the outcome of each interpolation method or each interval, the decision is made which method to use.
 
 ### Code explain
+
 nd.random.choice is the function which I mention before. Through np.ma.mask, two matrices (numeric matrix and Boolean matrix) can be given as masks to remind me which positions are missing by my simulation.
 It would return:
+
 - SD : Stock Data
 - SDM : Stock Data Masked
 - MASK : bool martix, which position is masked
-- title : Inherit read_data, the stock names  
+- title : Inherit read_data, the stock names
 
 ```python3
 def mask_data(args, SD, title):
@@ -57,7 +59,7 @@ def mask_data(args, SD, title):
 
 ## Definition of Loss
 
-It is important to define an evaluation for various imputation of missing values. We know that the amount of missing data will be $fac = D\cdot p$, which $D$ is the number of days, $p$ is the mask ratio. The error of one stock is 
+It is important to define an evaluation for various imputation of missing values. We know that the amount of missing data will be $fac = D\cdot p$, which $D$ is the number of days, $p$ is the mask ratio. The error of one stock is
 
 $Loss(stock) = \sum^{D}_{i}{SD_i-SDM_i}$
 
@@ -67,29 +69,23 @@ $\widehat{Loss}=\frac{Loss}{fac} = \frac{\sum^{D}_{i}{SD_i-SDM_i}}{D\cdot p}$
 
 This formula can be used to measure whether different interpolation methods are accurate for the same stock.
 But the next problems come out, there is a lot of different in each stock:
-|method|meta|goog| amzn| nflx| aapl|
-|-|-|-|-|-|-|
-|interp1d|1400.98|449.24| 676.23|3183.65| 531.46|
+
+| method   | meta    | goog   | amzn   | nflx    | aapl   |
+| -------- | ------- | ------ | ------ | ------- | ------ |
+| interp1d | 1400.98 | 449.24 | 676.23 | 3183.65 | 531.46 |
 
 The reason why is obvious, because different stocks have different bases, so there will be differences in multiples when making up the difference, and the way to solve this problem is to divide their Loss by the average of the stock price:
 
 $\widetilde{Loss} = \frac{\widehat{Loss}}{stock_{avg}} =  \frac{\sum^{D}_{i}{SD_i-SDM_i}}{D\cdot p \cdot stock_{avg}}$
 
 Finally, the loss of these stock is fair:
-|method|meta|goog| amzn| nflx| aapl|
-|-|-|-|-|-|-|
-|interp1d|1.462%|1.261%| 1.636%|1.817%| 1.351%|
 
-After defining LOSS, the structure of the experiment is roughly formed, because we know that the value of LOSS is determined according to the following reasons:
-- Different stocks
-- Different sampling periods
-- Different sampling lengths
-- Different mask ratios
-- Different Interpolation Methods
+| method   | meta   | goog   | amzn   | nflx   | aapl   |
+| -------- | ------ | ------ | ------ | ------ | ------ |
+| interp1d | 1.462% | 1.261% | 1.636% | 1.817% | 1.351% |
 
-Therefore, I will fix the control variable and do the following experiments to verify whether different operating variables will have reasonable results or have an impact on the Dataset.
+Code explain
 
-### Code explain
 Via lambda function, we can define the loss function, and the Normalization Factor(NF) could calculate by numpy function.
 
 ```python
@@ -99,11 +95,12 @@ loss_table = loss_table.div(NF, axis=1)
 ```
 
 ## Method of Interpolation
+
 Thanks for scipy, it extension provide me a easy way to call out interpolation function. The function call by these steps:
+
 1. define the interpolation function by known pair(x, y).
 2. Give the function which point(x) is missed.
 3. Fill in the value which is predicted.
-
 
 ```python3
 find_mask = lambda array : np.nonzero(array)[0]
@@ -116,9 +113,11 @@ def INTER(sdm, mask, func = interp1d):
 ```
 
 ## Method of Interpolation
+
 The first is the analysis of various interpolation methods. I compared the methods of interp1d, UnivariateSpline, Rbf, make_interp_spline, and LinearRegression. Because there are many errors in linear regression, I will not list them all in the first chart, but in the Loss-date chart of the same stock. It can be seen that the commonly used interpolation methods such as interp1d are better. I will introduce other interpolation methods in the next paragraphs, but I will use interp1d as the default interpolation method in the following comparison.
 
 ## Rbf
+
 **these two part is refer from wiki**
 
 Radial basis function (RBF) interpolation is an advanced method in approximation theory for constructing high-order accurate interpolants of unstructured data, possibly in high-dimensional spaces. The interpolant takes the form of a weighted sum of radial basis functions, like for example Gaussian distributions. RBF interpolation is a mesh-free method, meaning the nodes (points in the domain) need not lie on a structured grid, and does not require the formation of a mesh. It is often spectrally accurate and stable for large numbers of nodes even in high dimensions.
@@ -126,6 +125,7 @@ Radial basis function (RBF) interpolation is an advanced method in approximation
 Many interpolation methods can be used as the theoretical foundation of algorithms for approximating linear operators, and RBF interpolation is no exception. RBF interpolation has been used to approximate differential operators, integral operators, and surface differential operators.
 
 ## Spline
+
 **these two part is refer from wiki**
 In mathematics, a spline is a special function defined piecewise by polynomials. In interpolating problems, spline interpolation is often preferred to polynomial interpolation because it yields similar results, even when using low degree polynomials, while avoiding Runge's phenomenon for higher degrees.
 
@@ -133,23 +133,22 @@ In the computer science subfields of computer-aided design and computer graphics
 
 The term spline comes from the flexible spline devices used by shipbuilders and draftsmen to draw smooth shapes.
 
-
 ### Linear Regression
+
 The first is why Linear regression is so terrible. I think this reason is very obvious, because we can't describe the data of several years with a $y=ax+b$, and it will need more polynomials to represent it. However, when we reduce the time to about 10 days, we can see that the Loss of linear regression gradually decreases, approaching other inner difference methods. As you differentiate a polynomial interval, the tangent will fit the interval better (compared to the full function).
 
 ![](./../src/mask_difi.png)
 
 ![](./../src/mask_difii.png)
 
-## 
-
 ## Risk & Mask
+
 Next, let's discuss Risk and Mask. In the last homework, I mentioned a Risk function, which can measure the volatility and change of a stock. It is conceivable that volatility will affect the predictability of a missing stock, which will make Mask's Error larger.
 So I drew two graphs, the Risk, Mask values from Day[1000:0] to Day[10:0].
 
-||Mask Value|Risk Value|
-|-|-|-|
-|Figure|![](./../src/mask.png)|![](./../src/risk.png)|
+|        | Mask Value           | Risk Value           |
+| ------ | -------------------- | -------------------- |
+| Figure | ![](./../src/mask.png) | ![](./../src/risk.png) |
 
 However, unlike expected they were not nearly the same, so I checked the difference. This makes me think that the volatility of stocks does not refer to the trend, that is to say, the rapid growth of stocks will also cause large volatility, but such events are actually easy to predict, because it is just an ordinary strictly increasing function.
 
@@ -162,11 +161,13 @@ A very trivial property is that the higher the Mask ratio, the lower the correct
 ![](./../src/mask_difp.png)
 
 ## Other works
+
 In the last homework, I mentioned that I plan to incorporate the FAANG news into the forecasting model, so I wrote a script this week to get the daily stock market news through the API, just like updating the stock price before, I will put him In an efficient way [HW1](./HW1_109511068.pdf) written in my own data set, the detailed code can be found [here](../tools/update_new.ipynb). If the next job needs or has free time, I will finish importing it into the pretrained BERT model to calculate the statement score. The focus of this assignment is to supplement the missing data, so I will wait for the completion of the BERT encode, and then introduce my overall approach.
 
 ![](../src/api_icon.png)
 
 ## Sum up / Future work
+
 In this assignment, I hollowed out the function myself, and did experiments with different interpolation methods, different intervals, etc., which proved that linear interpolation would be a good method for interpolation. And it has the opportunity to be used for the simplest (brainless) forecasting method in stock market forecasting.
 
 In the same paragraph as the previous paragraph, I will complete a more detailed BERT model in the future to bring NLP technology to FAANG for prediction, hoping to make the prediction results more accurate.
