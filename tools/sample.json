@@ -1,0 +1,122 @@
+{
+    "meta": {
+        "found": 2121,
+        "returned": 3,
+        "limit": 3,
+        "page": 1
+    },
+    "data": [
+        {
+            "uuid": "5f355da3-cfe3-4209-888c-182bbc491d80",
+            "title": "Top 5 3rd Quarter Trades of Platte River Wealth Advisors, LLC",
+            "description": "GuruFocus Article or News written by insider and the topic is about:",
+            "keywords": "GuruFocus, Article, News, insider, GL, META, IBDP, IBDQ, IVW",
+            "snippet": "Platte River Wealth Advisors, LLC recently filed their 13F report for the third quarter of 2022, which ended on 2022-09-30.\n\nThe 13F report details which stocks...",
+            "url": "https://www.gurufocus.com/news/1875088/top-5-3rd-quarter-trades-of-platte-river-wealth-advisors-llc",
+            "image_url": "https://static.gurufocus.com/images/logo_global.png",
+            "language": "en",
+            "published_at": "2022-10-21T23:00:26.000000Z",
+            "source": "gurufocus.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 15.740334,
+                    "sentiment_score": 0.6719,
+                    "highlights": [
+                        {
+                            "highlight": "On 10/21/2022, <em>Meta</em> <em>Platforms</em> <em>Inc</em> traded for a price of $130.01 per share and a market cap of $349.41Bil. The stock has returned -61.97% over the past year.\n\nGuruFocus gives the company a financial strength rating of 8 out of 10 and a profitability rating of 10 out of 10.",
+                            "sentiment": 0.7579,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "In terms of valuation, <em>Meta</em> <em>Platforms</em> <em>Inc</em> has a price-earnings ratio of 11.05, a price-book ratio of 2.86, a price-earnings-to-growth (PEG) ratio of 0.41, a EV-to-Ebitda ratio of 6.95 and a price-sales ratio of 3.10.\n\nThe price-to-GF Value ratio is 0.34, earning the stock a GF Value rank of 4.",
+                            "sentiment": 0.5859,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "4c3d8a79-eeb1-42b1-a154-9183419fe3e1",
+            "title": "Top 5 3rd Quarter Trades of ROTHSCHILD INVESTMENT CORP /IL",
+            "description": "GuruFocus Article or News written by insider and the topic is about:",
+            "keywords": "GuruFocus, Article, News, insider, WM, GPN, SWK, META, DKNG",
+            "snippet": "ROTHSCHILD INVESTMENT CORP /IL recently filed their 13F report for the third quarter of 2022, which ended on 2022-09-30.\n\nThe 13F report details which stocks we...",
+            "url": "https://www.gurufocus.com/news/1875062/top-5-3rd-quarter-trades-of-rothschild-investment-corp-il",
+            "image_url": "https://static.gurufocus.com/images/logo_global.png",
+            "language": "en",
+            "published_at": "2022-10-21T23:00:08.000000Z",
+            "source": "gurufocus.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 14.823912,
+                    "sentiment_score": 0.6719,
+                    "highlights": [
+                        {
+                            "highlight": "On 10/21/2022, <em>Meta</em> <em>Platforms</em> <em>Inc</em> traded for a price of $130.01 per share and a market cap of $349.41Bil. The stock has returned -61.97% over the past year.\n\nGuruFocus gives the company a financial strength rating of 8 out of 10 and a profitability rating of 10 out of 10.",
+                            "sentiment": 0.7579,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "In terms of valuation, <em>Meta</em> <em>Platforms</em> <em>Inc</em> has a price-earnings ratio of 11.05, a price-book ratio of 2.86, a price-earnings-to-growth (PEG) ratio of 0.41, a EV-to-Ebitda ratio of 6.95 and a price-sales ratio of 3.10.\n\nThe price-to-GF Value ratio is 0.34, earning the stock a GF Value rank of 4.",
+                            "sentiment": 0.5859,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "135834df-af65-4291-be68-85e94ce55064",
+            "title": "Wall Street ends higher as hopes for less aggressive Fed grow",
+            "description": "By Chuck Mikolajczak NEW YORK (Reuters) - U.S. stocks surged to close out the trading week on Friday after a report said the U.S. Federal Reserve will likely debate on a smaller interest rate hike",
+            "keywords": "",
+            "snippet": "By Chuck Mikolajczak\n\nNEW YORK (Reuters) \u2013 U.S. stocks surged to close out the trading week on Friday after a report said the U.S. Federal Reserve will likely...",
+            "url": "https://www.oann.com/business/wall-street-ends-higher/",
+            "image_url": "https://c3.oann.com/wp-content/uploads/Reuters_Direct_Media/USOnlineReportBusinessNews/tagreuters.com2022binary_LYNXMPEI9K0BZ-BASEIMAGE.jpg",
+            "language": "en",
+            "published_at": "2022-10-21T20:36:19.000000Z",
+            "source": "oann.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 19.854242,
+                    "sentiment_score": -0.4404,
+                    "highlights": [
+                        {
+                            "highlight": "That weighed on other companies that rely heavily on ad revenue such as <em>Meta</em> <em>Platforms</em> <em>Inc</em>, down 1.16% and Pinterest, off 6.40%.\n\nAlso falling after reporting quarterly earnings were American Express, which lost 1.67% and Verizon Communications, down 4.46%.",
+                            "sentiment": -0.4404,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        }
+    ]
+}
