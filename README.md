@@ -50,7 +50,7 @@ And make the file like this:
 # Visualize Data
 ### [More Detail](visulize/README.md)
 ## Correlation GIF
-![](./src/corr2.jpg)
+![](./src/correlation/corr2.jpg)
 
 # Fine Tune BERT
 
