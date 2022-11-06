@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "commit-emojis": "^1.0.0",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^9.5.0"
