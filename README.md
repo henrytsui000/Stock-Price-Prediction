@@ -18,6 +18,8 @@ $cd $THIS_PROJECT
 $conda create -n IDS python=3.8
 $conda activate IDS
 $pip install -r requirements.txt
+$conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+# install pytorch, please choose your cuda version
 ```
 
 # Prepare Data
