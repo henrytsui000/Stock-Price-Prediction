@@ -23,28 +23,25 @@ $pip install -r requirements.txt
 # Prepare Data
 There are two ways to get the news data and the stock price data:
 
-1. Run the python code to get the data. Your may apply an account at marketaux, and add a .env file which indicate the TOKEN
+1. Run the python code to get the data. You may apply an account at marketaux, and add an .env file which indicate the TOKEN
 ```bash
 $python tools/update_data.py
 $python tools/update_news.py
 ```
 
-2. Download the files which I upload to the Google Drive.
+2. Use the command below to download the files which I upload to the Google Drive.  
 ```bash
-$gdown ${news.csv}
-$gdown ${price.csv}
+$gdown --folder https://drive.google.com/drive/folders/1WR5bq9gzMtNFHMnTB6dLEm8AeJj8b9ZT?usp=share_link
 ```
-
-And make the file like this:
+The file structure you downloaded is as follows:
 ```
 ./data
 ├── News
-│   ├── FAANG_STOCK_NEWS.csv
 │   └── news.csv
 └── Stock
-    └── stock.csv
+    └── stock.csv 
 
-2 directories, 3 files
+2 directories, 2 files
 ```
 
 # Visualize Data
