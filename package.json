@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
