@@ -1,5 +1,4 @@
 # DataScienceProject
-# About
 
 This is a project about my data science course, the main idea is a AI model through fuse the stock news title and past stock price to predict the stock price in the future.
 
@@ -48,18 +47,15 @@ And make the file like this:
 ```
 
 # Visualize Data
-### [More Detail](visulize/README.md)
+[README](visulize/README.md)
 ## Correlation GIF
-![](./src/corr2.jpg)
+```bash
+$python correlation_gif.py
+```
 
-# Fine Tune BERT
-
-# Go Predict
 
 # Experiment
 
 # Acknowledgement
 
-This visiulize source code is based on FFN, Numpy, Pandas. Thanks for their wonderful works.
-
-The code for predict stock news is based on BERT, Thanks for GOOGLE.
+This source code is based on FFN, Numpy, Pandas. Thanks for their wonderful works.

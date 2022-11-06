@@ -7,7 +7,7 @@ import numpy as np
 matplotlib.use('agg') 
 
 
-def get_price(path = "./data/stock.csv"):
+def get_price(path = "./data/Stock/stock.csv"):
     prices = pd.read_csv(path, index_col=0)
     return prices
 
@@ -20,7 +20,6 @@ def vis(heatmap, cmap = "YlGnBu"):
     img  = img.reshape(fig.canvas.get_width_height()[::-1] + (3,))
     img = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
     plt.clf()
-    
     return img
 
 def draw(offset = 100):
