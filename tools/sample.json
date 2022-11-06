@@ -1,100 +1,22 @@
 {
     "meta": {
-        "found": 2121,
-        "returned": 3,
-        "limit": 3,
+        "found": 2636,
+        "returned": 20,
+        "limit": 20,
         "page": 1
     },
     "data": [
         {
-            "uuid": "5f355da3-cfe3-4209-888c-182bbc491d80",
-            "title": "Top 5 3rd Quarter Trades of Platte River Wealth Advisors, LLC",
-            "description": "GuruFocus Article or News written by insider and the topic is about:",
-            "keywords": "GuruFocus, Article, News, insider, GL, META, IBDP, IBDQ, IVW",
-            "snippet": "Platte River Wealth Advisors, LLC recently filed their 13F report for the third quarter of 2022, which ended on 2022-09-30.\n\nThe 13F report details which stocks...",
-            "url": "https://www.gurufocus.com/news/1875088/top-5-3rd-quarter-trades-of-platte-river-wealth-advisors-llc",
-            "image_url": "https://static.gurufocus.com/images/logo_global.png",
-            "language": "en",
-            "published_at": "2022-10-21T23:00:26.000000Z",
-            "source": "gurufocus.com",
-            "relevance_score": null,
-            "entities": [
-                {
-                    "symbol": "META",
-                    "name": "Meta Platforms Inc",
-                    "exchange": "NASDAQ",
-                    "exchange_long": "NASDAQ Stock Exchange",
-                    "country": "us",
-                    "type": "equity",
-                    "industry": "Communication Services",
-                    "match_score": 15.740334,
-                    "sentiment_score": 0.6719,
-                    "highlights": [
-                        {
-                            "highlight": "On 10/21/2022, <em>Meta</em> <em>Platforms</em> <em>Inc</em> traded for a price of $130.01 per share and a market cap of $349.41Bil. The stock has returned -61.97% over the past year.\n\nGuruFocus gives the company a financial strength rating of 8 out of 10 and a profitability rating of 10 out of 10.",
-                            "sentiment": 0.7579,
-                            "highlighted_in": "main_text"
-                        },
-                        {
-                            "highlight": "In terms of valuation, <em>Meta</em> <em>Platforms</em> <em>Inc</em> has a price-earnings ratio of 11.05, a price-book ratio of 2.86, a price-earnings-to-growth (PEG) ratio of 0.41, a EV-to-Ebitda ratio of 6.95 and a price-sales ratio of 3.10.\n\nThe price-to-GF Value ratio is 0.34, earning the stock a GF Value rank of 4.",
-                            "sentiment": 0.5859,
-                            "highlighted_in": "main_text"
-                        }
-                    ]
-                }
-            ],
-            "similar": []
-        },
-        {
-            "uuid": "4c3d8a79-eeb1-42b1-a154-9183419fe3e1",
-            "title": "Top 5 3rd Quarter Trades of ROTHSCHILD INVESTMENT CORP /IL",
-            "description": "GuruFocus Article or News written by insider and the topic is about:",
-            "keywords": "GuruFocus, Article, News, insider, WM, GPN, SWK, META, DKNG",
-            "snippet": "ROTHSCHILD INVESTMENT CORP /IL recently filed their 13F report for the third quarter of 2022, which ended on 2022-09-30.\n\nThe 13F report details which stocks we...",
-            "url": "https://www.gurufocus.com/news/1875062/top-5-3rd-quarter-trades-of-rothschild-investment-corp-il",
-            "image_url": "https://static.gurufocus.com/images/logo_global.png",
-            "language": "en",
-            "published_at": "2022-10-21T23:00:08.000000Z",
-            "source": "gurufocus.com",
-            "relevance_score": null,
-            "entities": [
-                {
-                    "symbol": "META",
-                    "name": "Meta Platforms Inc",
-                    "exchange": "NASDAQ",
-                    "exchange_long": "NASDAQ Stock Exchange",
-                    "country": "us",
-                    "type": "equity",
-                    "industry": "Communication Services",
-                    "match_score": 14.823912,
-                    "sentiment_score": 0.6719,
-                    "highlights": [
-                        {
-                            "highlight": "On 10/21/2022, <em>Meta</em> <em>Platforms</em> <em>Inc</em> traded for a price of $130.01 per share and a market cap of $349.41Bil. The stock has returned -61.97% over the past year.\n\nGuruFocus gives the company a financial strength rating of 8 out of 10 and a profitability rating of 10 out of 10.",
-                            "sentiment": 0.7579,
-                            "highlighted_in": "main_text"
-                        },
-                        {
-                            "highlight": "In terms of valuation, <em>Meta</em> <em>Platforms</em> <em>Inc</em> has a price-earnings ratio of 11.05, a price-book ratio of 2.86, a price-earnings-to-growth (PEG) ratio of 0.41, a EV-to-Ebitda ratio of 6.95 and a price-sales ratio of 3.10.\n\nThe price-to-GF Value ratio is 0.34, earning the stock a GF Value rank of 4.",
-                            "sentiment": 0.5859,
-                            "highlighted_in": "main_text"
-                        }
-                    ]
-                }
-            ],
-            "similar": []
-        },
-        {
-            "uuid": "135834df-af65-4291-be68-85e94ce55064",
-            "title": "Wall Street ends higher as hopes for less aggressive Fed grow",
-            "description": "By Chuck Mikolajczak NEW YORK (Reuters) - U.S. stocks surged to close out the trading week on Friday after a report said the U.S. Federal Reserve will likely debate on a smaller interest rate hike",
+            "uuid": "d5b8c1b1-a352-488a-99a0-98084f6a425f",
+            "title": "Twitter co-founder Jack Dorsey admits he grew company 'too fast' as Musk layoffs take effect",
+            "description": "Twitter founder Jack Dorsey said his decisions to grow the company",
             "keywords": "",
-            "snippet": "By Chuck Mikolajczak\n\nNEW YORK (Reuters) \u2013 U.S. stocks surged to close out the trading week on Friday after a report said the U.S. Federal Reserve will likely...",
-            "url": "https://www.oann.com/business/wall-street-ends-higher/",
-            "image_url": "https://c3.oann.com/wp-content/uploads/Reuters_Direct_Media/USOnlineReportBusinessNews/tagreuters.com2022binary_LYNXMPEI9K0BZ-BASEIMAGE.jpg",
+            "snippet": "Twitter co-founder Jack Dorsey lamented that he may have made poor decisions that led to Elon Musk\u2019s purchase of the company amid backlash to Musk\u2019s widespr...",
+            "url": "https://www.foxbusiness.com/technology/twitter-co-founder-jack-dorsey-admits-grew-company-too-fast-musk-layoffs-take-effect",
+            "image_url": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2022/08/0/0/Jack-Dorsey.jpg?ve=1&tl=1",
             "language": "en",
-            "published_at": "2022-10-21T20:36:19.000000Z",
-            "source": "oann.com",
+            "published_at": "2022-11-05T20:13:24.000000Z",
+            "source": "foxbusiness.com",
             "relevance_score": null,
             "entities": [
                 {
@@ -105,12 +27,2709 @@
                     "country": "us",
                     "type": "equity",
                     "industry": "Communication Services",
-                    "match_score": 19.854242,
-                    "sentiment_score": -0.4404,
+                    "match_score": 13.746987,
+                    "sentiment_score": -0.4588,
                     "highlights": [
                         {
-                            "highlight": "That weighed on other companies that rely heavily on ad revenue such as <em>Meta</em> <em>Platforms</em> <em>Inc</em>, down 1.16% and Pinterest, off 6.40%.\n\nAlso falling after reporting quarterly earnings were American Express, which lost 1.67% and Verizon Communications, down 4.46%.",
-                            "sentiment": -0.4404,
+                            "highlight": "GOOGL ALPHABET INC. 86.58 +3.15 +3.78% META <em>META</em> <em>PLATFORMS</em> <em>INC</em>. 90.79 +1.88 +2.11% ZI ZOOMINFO TECHNOLOGIES INC. 29.28 -1.97 -6.30%\n\nMorning Brew\u2019s Jack Abbleby noted that Dorsey was \"awful quiet over there,\" as did Korea Herald features writer Hyunsu Yim.",
+                            "sentiment": -0.4588,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "186d471c-27a8-4e3d-a905-ab6982b32996",
+            "title": "The Fall of Big Tech Is Boosting Stock Quants on Wall Street",
+            "description": "Another tech plunge, another shot in the arm for stock quants mounting a big comeback in Wall Street\u2019s awful year.",
+            "keywords": "",
+            "snippet": "This advertisement has not loaded yet, but your article continues below.\n\n'A dart in the forehead of the energy industry': Oilpatch reacts to tax on stock buyba...",
+            "url": "https://financialpost.com/pmn/business-pmn/the-fall-of-big-tech-is-boosting-stock-quants-on-wall-street",
+            "image_url": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2022/11/a-momentum-etf-just-posted-record-outperformance-and-inflows.jpg",
+            "language": "en",
+            "published_at": "2022-11-05T18:02:00.000000Z",
+            "source": "financialpost.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 9.408848,
+                    "sentiment_score": 0.6249,
+                    "highlights": [
+                        {
+                            "highlight": "Please try again\n\nArticle content With rising interest rates spurring an abrupt end to the leadership of Big Tech, the largest technology companies are wielding less and less power over broader indexes, as former high-fliers like <em>Meta</em> <em>Platforms</em> <em>Inc</em>. and Amazon.com Inc. crash anew in the latest wave of selling.",
+                            "sentiment": 0.6249,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": [
+                {
+                    "uuid": "eccab9bc-81f8-4f0f-83c1-d893d19bcd23",
+                    "title": "The Fall of Big Tech Is Boosting Stock Quants on Wall Street",
+                    "description": "(Bloomberg) -- Another tech plunge, another shot in the arm for stock quants mounting a big comeback in Wall Street\u2019s awful year.Most Read from BloombergLawyer Suing Twitter Over Layoffs Says Musk Trying to ComplyChina to \u2018Unswervingly\u2019 Keep to Covid Zero Policy, Dashing HopesWells Fargo Faces US Demand for Record Fine Exceeding $1 BillionPutin\u2019s Ukraine War Is Entering a Terrifying New PhaseCarvana\u2019s 96% Collapse Erases Billions From Father-Son Duo\u2019s WealthAs the Federal Reserve ramped up its h",
+                    "keywords": "",
+                    "snippet": "(Bloomberg) -- Another tech plunge, another shot in the arm for stock quants mounting a big comeback in Wall Street\u2019s awful year.\n\nMost Read from Bloomberg\n\nA...",
+                    "url": "https://finance.yahoo.com/news/fall-big-tech-boosting-stock-170000865.html",
+                    "image_url": "https://media.zenfs.com/en/bloomberg_markets_842/175d30266a221730c0bac1f25247e69e",
+                    "language": "en",
+                    "published_at": "2022-11-05T17:00:00.000000Z",
+                    "source": "finance.yahoo.com",
+                    "relevance_score": null,
+                    "entities": [
+                        {
+                            "symbol": "AMZN.MX",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 14.843522,
+                            "sentiment_score": 0.4215,
+                            "highlights": [
+                                {
+                                    "highlight": "With rising interest rates spurring an abrupt end to the leadership of Big Tech, the largest technology companies are wielding less and less power over broader indexes, as former high-fliers like Meta Platforms Inc. and <em>Amazon.com</em> <em>Inc</em>. crash anew in the latest wave of selling.",
+                                    "sentiment": 0.4215,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AAPL.MX",
+                            "name": "Apple Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 10.190229,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGL.MX",
+                            "name": "Alphabet Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 16.590088,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOG.MX",
+                            "name": "Alphabet Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 16.590088,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "FB.MX",
+                            "name": "Facebook, Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.213339,
+                            "sentiment_score": 0.7322,
+                            "highlights": [
+                                {
+                                    "highlight": "That was the case in the low-rate years when the Faang block -- -- <em>Facebook</em> <em>Inc</em>., now known as Meta, Apple Inc., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities.",
+                                    "sentiment": 0.7322,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NFLX.MX",
+                            "name": "Netflix, Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 11.345732,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, <em>Netflix</em> <em>Inc</em>. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "MTUM.MX",
+                            "name": "iShares MSCI USA Momentum Factor ETF",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "etf",
+                            "industry": "N/A",
+                            "match_score": 55.634262,
+                            "sentiment_score": 0.6369,
+                            "highlights": [
+                                {
+                                    "highlight": "The $12 billion <em>iShares</em> <em>MSCI</em> <em>USA</em> <em>Momentum</em> <em>Factor</em> <em>ETF</em> (ticker MTUM) drew a record $2 billion in inflows last month after its 13% surge beat the wider market by the most in its nine-year history. A market-neutral version compiled by Bloomberg is on track for the best year since 2015.",
+                                    "sentiment": 0.6369,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "MTUM",
+                            "name": "iShares MSCI USA Momentum Factor ETF",
+                            "exchange": "BATS",
+                            "exchange_long": "CBOE BZX",
+                            "country": "us",
+                            "type": "etf",
+                            "industry": "N/A",
+                            "match_score": 55.63389,
+                            "sentiment_score": 0.6369,
+                            "highlights": [
+                                {
+                                    "highlight": "The $12 billion <em>iShares</em> <em>MSCI</em> <em>USA</em> <em>Momentum</em> <em>Factor</em> <em>ETF</em> (ticker MTUM) drew a record $2 billion in inflows last month after its 13% surge beat the wider market by the most in its nine-year history. A market-neutral version compiled by Bloomberg is on track for the best year since 2015.",
+                                    "sentiment": 0.6369,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "^GSPC",
+                            "name": "S&P 500",
+                            "exchange": "INDEXSP",
+                            "exchange_long": "S&P Index",
+                            "country": "us",
+                            "type": "index",
+                            "industry": "N/A",
+                            "match_score": 34.40162,
+                            "sentiment_score": 0.39706,
+                            "highlights": [
+                                {
+                                    "highlight": "Reversing the extremes of the cheap-money years, the capitalization-weighted <em>S</em>&<em>P</em> <em>500</em> hit the lowest versus an equal-weighted version of the benchmark since 2019.\n\nAll this is a boon for so-called factor investors, who dissect equities according to their math-derived traits, from how cheap equities look to how fast they\u2019ve risen.",
+                                    "sentiment": -0.3818,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "In 11 of the last 13 sessions where the <em>S</em>&<em>P</em> <em>500</em> has dropped more than 2%, strategies beloved by factor funds like value, quality, momentum and low volatility have all made money, according to Dow Jones\u2019 market-neutral indexes.",
+                                    "sentiment": 0.7269,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "So when market gains are concentrated in a few megacaps, quants almost by definition will own far less of those shares than a cheap-and-cheerful <em>S</em>&<em>P</em> <em>500</em> tracker.",
+                                    "sentiment": 0.5574,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "In a reversal of pre-2021 trends, the <em>S</em>&<em>P</em> <em>500</em> pulled off an around-8% surge in October even with half of the Faangs falling.\n\nLately, the momentum factor, a popular quant trade, has also joined the party. A chameleon investing style that simply bets on the past year\u2019s winners, it doesn\u2019t do well at turning points like the start of 2022.",
+                                    "sentiment": 0.891,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "Meanwhile, 87% of high-momentum firms have beaten earnings expectations this season, compared to 70% of the <em>S</em>&<em>P</em> <em>500</em>, per Harvey. These winning names are also getting rewarded more for good results and punished less for bad ones.",
+                                    "sentiment": 0.1918,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AAPL",
+                            "name": "Apple Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 10.189678,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZN",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 14.845168,
+                            "sentiment_score": 0.4215,
+                            "highlights": [
+                                {
+                                    "highlight": "With rising interest rates spurring an abrupt end to the leadership of Big Tech, the largest technology companies are wielding less and less power over broader indexes, as former high-fliers like Meta Platforms Inc. and <em>Amazon.com</em> <em>Inc</em>. crash anew in the latest wave of selling.",
+                                    "sentiment": 0.4215,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOG",
+                            "name": "Alphabet Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.034711,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGL",
+                            "name": "Alphabet Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 16.59108,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "META",
+                            "name": "Meta Platforms Inc",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 11.369856,
+                            "sentiment_score": 0.4215,
+                            "highlights": [
+                                {
+                                    "highlight": "With rising interest rates spurring an abrupt end to the leadership of Big Tech, the largest technology companies are wielding less and less power over broader indexes, as former high-fliers like <em>Meta</em> <em>Platforms</em> <em>Inc</em>. and Amazon.com Inc. crash anew in the latest wave of selling.",
+                                    "sentiment": 0.4215,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NFLX",
+                            "name": "Netflix, Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 11.345163,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, <em>Netflix</em> <em>Inc</em>. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "FBOK34.SA",
+                            "name": "Facebook, Inc.",
+                            "exchange": "BVMF",
+                            "exchange_long": "The B3 S.A. - Brasil, Bolsa, Balc\u00e3o",
+                            "country": "br",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.212797,
+                            "sentiment_score": 0.7322,
+                            "highlights": [
+                                {
+                                    "highlight": "That was the case in the low-rate years when the Faang block -- -- <em>Facebook</em> <em>Inc</em>., now known as Meta, Apple Inc., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities.",
+                                    "sentiment": 0.7322,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NFLX34.SA",
+                            "name": "Netflix, Inc.",
+                            "exchange": "BVMF",
+                            "exchange_long": "The B3 S.A. - Brasil, Bolsa, Balc\u00e3o",
+                            "country": "br",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 11.345388,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, <em>Netflix</em> <em>Inc</em>. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AAPL.BA",
+                            "name": "Apple Inc.",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 10.189816,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGL.BA",
+                            "name": "Alphabet Inc.",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 16.591146,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NFLX.BA",
+                            "name": "Netflix, Inc.",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 11.345234,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, <em>Netflix</em> <em>Inc</em>. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NFLXD.BA",
+                            "name": "NETFLIX INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 11.345234,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, <em>Netflix</em> <em>Inc</em>. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AAPLD.BA",
+                            "name": "APPLE INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 10.189816,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "FBD.BA",
+                            "name": "FACEBOOK INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 9.212687,
+                            "sentiment_score": 0.7322,
+                            "highlights": [
+                                {
+                                    "highlight": "That was the case in the low-rate years when the Faang block -- -- <em>Facebook</em> <em>Inc</em>., now known as Meta, Apple Inc., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities.",
+                                    "sentiment": 0.7322,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOGLD.BA",
+                            "name": "ALPHABET INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 16.591154,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AAPLC.BA",
+                            "name": "APPLE INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 10.189816,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZN.SN",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 14.845146,
+                            "sentiment_score": 0.4215,
+                            "highlights": [
+                                {
+                                    "highlight": "With rising interest rates spurring an abrupt end to the leadership of Big Tech, the largest technology companies are wielding less and less power over broader indexes, as former high-fliers like Meta Platforms Inc. and <em>Amazon.com</em> <em>Inc</em>. crash anew in the latest wave of selling.",
+                                    "sentiment": 0.4215,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGL.SN",
+                            "name": "Alphabet Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 16.590937,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AAPLCL.SN",
+                            "name": "APPLE INC",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 10.189778,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AAPL.SN",
+                            "name": "Apple Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 10.189778,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOG.SN",
+                            "name": "Alphabet Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 16.590937,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZNCL.SN",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 14.845146,
+                            "sentiment_score": 0.4215,
+                            "highlights": [
+                                {
+                                    "highlight": "With rising interest rates spurring an abrupt end to the leadership of Big Tech, the largest technology companies are wielding less and less power over broader indexes, as former high-fliers like Meta Platforms Inc. and <em>Amazon.com</em> <em>Inc</em>. crash anew in the latest wave of selling.",
+                                    "sentiment": 0.4215,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGCL.SN",
+                            "name": "Alphabet Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 16.590937,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "FB.SN",
+                            "name": "Facebook, Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 9.212674,
+                            "sentiment_score": 0.7322,
+                            "highlights": [
+                                {
+                                    "highlight": "That was the case in the low-rate years when the Faang block -- -- <em>Facebook</em> <em>Inc</em>., now known as Meta, Apple Inc., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities.",
+                                    "sentiment": 0.7322,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "FBCL.SN",
+                            "name": "FACEBOOK INC",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 9.212677,
+                            "sentiment_score": 0.7322,
+                            "highlights": [
+                                {
+                                    "highlight": "That was the case in the low-rate years when the Faang block -- -- <em>Facebook</em> <em>Inc</em>., now known as Meta, Apple Inc., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities.",
+                                    "sentiment": 0.7322,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AAPL.NE",
+                            "name": "Apple Inc.",
+                            "exchange": "NEO",
+                            "exchange_long": "NEO Exchange",
+                            "country": "ca",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 10.189911,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZ.DE",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 14.84626,
+                            "sentiment_score": 0.4215,
+                            "highlights": [
+                                {
+                                    "highlight": "With rising interest rates spurring an abrupt end to the leadership of Big Tech, the largest technology companies are wielding less and less power over broader indexes, as former high-fliers like Meta Platforms Inc. and <em>Amazon.com</em> <em>Inc</em>. crash anew in the latest wave of selling.",
+                                    "sentiment": 0.4215,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "APC.DE",
+                            "name": "Apple Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 10.190521,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., now known as Meta, <em>Apple</em> <em>Inc</em>., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABEA.DE",
+                            "name": "Alphabet Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 16.592035,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "FB2A.DE",
+                            "name": "Facebook, Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.213314,
+                            "sentiment_score": 0.7322,
+                            "highlights": [
+                                {
+                                    "highlight": "That was the case in the low-rate years when the Faang block -- -- <em>Facebook</em> <em>Inc</em>., now known as Meta, Apple Inc., Amazon, Netflix Inc. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities.",
+                                    "sentiment": 0.7322,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NFC.DE",
+                            "name": "Netflix, Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 11.346088,
+                            "sentiment_score": 0.8158,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, <em>Netflix</em> <em>Inc</em>. and Google parent Alphabet Inc. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABEC.DE",
+                            "name": "Alphabet Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 16.591957,
+                            "sentiment_score": 0.67905,
+                            "highlights": [
+                                {
+                                    "highlight": "., Amazon, Netflix Inc. and Google parent <em>Alphabet</em> <em>Inc</em>. -- drove the bull market.\n\nNow a broader group of winners is giving money managers more opportunities. In a reversal of pre-2021 trends, the S&P 500 pulled off an around-8% surge in October even with half of the Faangs falling.",
+                                    "sentiment": 0.8158,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "These trends have only intensified lately with American heavyweights like Amazon, <em>Alphabet</em> and Microsoft posting disappointing earnings -- a big turnaround compared to the unbridled tech optimism of the low-rate era.\n\n\u201cThe single dimension that was driving those names to excess returns -- that model is somewhat broken,\u201d said Phayre at Abrdn.",
+                                    "sentiment": 0.5423,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "uuid": "a6e7fdb2-80ff-46ea-bd07-53f5c6416111",
+            "title": "Meta Stock: Mr. Market Shorted Zuckerberg; Future Of Media Is Here",
+            "description": "Meta Platforms stock continued to be slaughtered after its FQ3'22 earnings call. See why I believe META's long-term trajectory remains robust.",
+            "keywords": "",
+            "snippet": "Liia Galimzianova/iStock via Getty Images\n\nInvestment Thesis\n\nBig Tech YTD Stock Price\n\nSeeking Alpha\n\nMeta Platforms, Inc. (NASDAQ:META) continued to be slaugh...",
+            "url": "https://seekingalpha.com/article/4553082-meta-market-shorted-zuckerberg-prematurely-future-media",
+            "image_url": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1173326675/image_1173326675.jpg?io=getty-c-w750",
+            "language": "en",
+            "published_at": "2022-11-05T18:00:00.000000Z",
+            "source": "seekingalpha.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 13.847881,
+                    "sentiment_score": -0.5719,
+                    "highlights": [
+                        {
+                            "highlight": "Liia Galimzianova/iStock via Getty Images\n\nInvestment Thesis\n\nBig Tech YTD Stock Price\n\nSeeking Alpha\n\n<em>Meta</em> <em>Platforms</em>, <em>Inc</em>. (<em>NASDAQ:META</em>) continued to be slaughtered after its FQ3'22 earnings call, with a -73.74% plunge YTD against the wider market destruction of -22.48% in the S&P 500 Index.",
+                            "sentiment": -0.5719,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "5ff55fac-7139-46f1-bc32-30ca00379954",
+            "title": "What stock investors should watch for in the midterm elections, from cannabis to tech",
+            "description": "Next week\u2019s midterm elections could be a defining moment for equity investors.",
+            "keywords": "",
+            "snippet": "Next week\u2019s midterm elections could be a defining moment for equity investors with most polls pointing to Republicans at least winning the US House and maybe ...",
+            "url": "https://fortune.com/2022/11/05/stock-market-investors-midterms-elections-guide-congress/",
+            "image_url": "https://content.fortune.com/wp-content/uploads/2022/11/GettyImages-1439028342-e1667666531589.jpg?resize=1200,600",
+            "language": "en",
+            "published_at": "2022-11-05T16:49:01.000000Z",
+            "source": "fortune.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 11.597897,
+                    "sentiment_score": 0,
+                    "highlights": [
+                        {
+                            "highlight": "Big tech\n\nMajor US technology companies, from Alphabet Inc. to <em>Meta</em> <em>Platforms</em> <em>Inc</em>., have long been thought to be a target for potential regulation.",
+                            "sentiment": 0,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": [
+                {
+                    "uuid": "b649b93b-1f58-4ea2-ab06-0d5b0d0548a8",
+                    "title": "A Stock Trader's Guide to the US Midterm Elections",
+                    "description": "Next week\u2019s midterm elections could be a defining moment for equity investors with most polls pointing to Republicans at least winning the US House and maybe\u2026",
+                    "keywords": "",
+                    "snippet": "This advertisement has not loaded yet, but your article continues below.\n\n'A dart in the forehead of the energy industry': Oilpatch reacts to tax on stock buyba...",
+                    "url": "https://financialpost.com/pmn/business-pmn/a-stock-traders-guide-to-the-us-midterm-elections",
+                    "image_url": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2022/11/oil-producers-net-income-hit-records-ahead-of-midterms.jpg",
+                    "language": "en",
+                    "published_at": "2022-11-05T15:43:10.000000Z",
+                    "source": "financialpost.com",
+                    "relevance_score": null,
+                    "entities": [
+                        {
+                            "symbol": "0A4S.L",
+                            "name": "Sunrun Inc.",
+                            "exchange": "LSE",
+                            "exchange_long": "London Stock Exchange",
+                            "country": "gb",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 13.185555,
+                            "sentiment_score": 0.5647,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer NextEra Energy Inc. and rooftop-solar installer <em>Sunrun</em> <em>Inc</em>. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.5647,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZN",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 11.914982,
+                            "sentiment_score": 0.3612,
+                            "highlights": [
+                                {
+                                    "highlight": "Under that legislation, firms with large R&D spending like Intel Corp. and <em>Amazon.com</em> <em>Inc</em>. could fully deduct those costs during the year in which they occurred as opposed to having to write them off over of the span of five years.",
+                                    "sentiment": 0.3612,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOG",
+                            "name": "Alphabet Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 8.297842,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "APHA",
+                            "name": "Tilray, Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 8.034826,
+                            "sentiment_score": 0.6597,
+                            "highlights": [
+                                {
+                                    "highlight": "The Cannabis Index has plunged 57% in 2022, with <em>Tilray</em> Brands Inc., Canopy Growth Corp. and SNDL Inc. all sinking at least 45%. Investors will be closely watching several state referendums for progress toward legalization at a local level.",
+                                    "sentiment": 0.6597,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGL",
+                            "name": "Alphabet Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 11.499544,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "META",
+                            "name": "Meta Platforms Inc",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.751966,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from Alphabet Inc. to <em>Meta</em> <em>Platforms</em> <em>Inc</em>., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "BIDU",
+                            "name": "Baidu, Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 13.200553,
+                            "sentiment_score": 0.6997,
+                            "highlights": [
+                                {
+                                    "highlight": "., and <em>Baidu</em> <em>Inc</em>. Clean Power Democrats recently passed a landmark climate law that includes generous long-term subsidies for clean-power installations. Even though no Republicans in Congress supported the bill, it\u2019s highly unlikely these credits face any danger after the midterms.",
+                                    "sentiment": 0.6997,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "TLRY",
+                            "name": "Tilray, Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 8.034737,
+                            "sentiment_score": 0.6597,
+                            "highlights": [
+                                {
+                                    "highlight": "The Cannabis Index has plunged 57% in 2022, with <em>Tilray</em> Brands Inc., Canopy Growth Corp. and SNDL Inc. all sinking at least 45%. Investors will be closely watching several state referendums for progress toward legalization at a local level.",
+                                    "sentiment": 0.6597,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "CGC",
+                            "name": "Canopy Growth Corporation",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 9.138552,
+                            "sentiment_score": 0.4215,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>Canopy</em> <em>Growth</em> Corp. and SNDL Inc. all sinking at least 45%. Investors will be closely watching several state referendums for progress toward legalization at a local level. Voters in Maryland, Arkansas, Missouri, North Dakota and South Dakota will weigh whether to approve legalization for adults.",
+                                    "sentiment": 0.4215,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "COWN",
+                            "name": "Cowen Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Financial Services",
+                            "match_score": 9.220987,
+                            "sentiment_score": 0.26045,
+                            "highlights": [
+                                {
+                                    "highlight": "Article content \u201cRepublicans have traditionally been more favorable to the drug industry than Democrats,\u201d <em>Cowen</em> analyst Rick Weissenstein wrote in a note Oct. 14. \u201cWhile Republicans won\u2019t be able to repeal the drug pricing provisions, they have vowed to hold hearings on the plan and to look for other ways to slow down implementation of the bill.\u201d",
+                                    "sentiment": 0.5209,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "Article content If Republicans take full control of Congress it will ratchet up the intensity of oversight and likely lead to hearings not only over the status of audits but also if Chinese firms should even be listed in the US at all, according to Jaret Seiberg, an analyst at <em>Cowen</em> & Co.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "COWNL",
+                            "name": "Cowen Inc",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 9.220912,
+                            "sentiment_score": 0.26045,
+                            "highlights": [
+                                {
+                                    "highlight": "Article content \u201cRepublicans have traditionally been more favorable to the drug industry than Democrats,\u201d <em>Cowen</em> analyst Rick Weissenstein wrote in a note Oct. 14. \u201cWhile Republicans won\u2019t be able to repeal the drug pricing provisions, they have vowed to hold hearings on the plan and to look for other ways to slow down implementation of the bill.\u201d",
+                                    "sentiment": 0.5209,
+                                    "highlighted_in": "main_text"
+                                },
+                                {
+                                    "highlight": "Article content If Republicans take full control of Congress it will ratchet up the intensity of oversight and likely lead to hearings not only over the status of audits but also if Chinese firms should even be listed in the US at all, according to Jaret Seiberg, an analyst at <em>Cowen</em> & Co.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PDD",
+                            "name": "Pinduoduo Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 14.235925,
+                            "sentiment_score": 0.6997,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>Pinduoduo</em> <em>Inc</em>., and Baidu Inc. Clean Power Democrats recently passed a landmark climate law that includes generous long-term subsidies for clean-power installations. Even though no Republicans in Congress supported the bill, it\u2019s highly unlikely these credits face any danger after the midterms.",
+                                    "sentiment": 0.6997,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "RUN",
+                            "name": "Sunrun Inc.",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 15.476674,
+                            "sentiment_score": 0.5647,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer NextEra Energy Inc. and rooftop-solar installer <em>Sunrun</em> <em>Inc</em>. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.5647,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABBV",
+                            "name": "AbbVie Inc.",
+                            "exchange": "NYSE",
+                            "exchange_long": "New York Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 11.383974,
+                            "sentiment_score": -0.2617,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>AbbVie</em> <em>Inc</em>., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing. US-Listed Chinese Stocks A threat to delist Chinese stocks that trade on US exchanges but don\u2019t comply with Trump-era audit laws has backing from both Democrats and Republicans.",
+                                    "sentiment": -0.2617,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NEE-PQ",
+                            "name": "NextEra Energy, Inc.",
+                            "exchange": "NYSE",
+                            "exchange_long": "New York Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Utilities",
+                            "match_score": 16.099485,
+                            "sentiment_score": 0.4767,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer <em>NextEra</em> <em>Energy</em> <em>Inc</em>. and rooftop-solar installer Sunrun Inc. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.4767,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NEE",
+                            "name": "NextEra Energy, Inc.",
+                            "exchange": "NYSE",
+                            "exchange_long": "New York Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Utilities",
+                            "match_score": 16.099485,
+                            "sentiment_score": 0.4767,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer <em>NextEra</em> <em>Energy</em> <em>Inc</em>. and rooftop-solar installer Sunrun Inc. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.4767,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PFE",
+                            "name": "Pfizer Inc.",
+                            "exchange": "NYSE",
+                            "exchange_long": "New York Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 8.118466,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Pharmaceutical companies including <em>Pfizer</em> <em>Inc</em>., AbbVie Inc., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PFE-WI",
+                            "name": "Pfizer, Inc.",
+                            "exchange": "NYSE",
+                            "exchange_long": "New York Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 8.118472,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Pharmaceutical companies including <em>Pfizer</em> <em>Inc</em>., AbbVie Inc., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PSX",
+                            "name": "Phillips 66",
+                            "exchange": "NYSE",
+                            "exchange_long": "New York Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Energy",
+                            "match_score": 12.320999,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including <em>Phillips</em> <em>66</em>, Exxon Mobil Corp. and Chevron Corp. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PFE.ST",
+                            "name": "Pfizer Inc.",
+                            "exchange": "OMXS",
+                            "exchange_long": "Nasdaq Stockholm",
+                            "country": "se",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 8.118472,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Pharmaceutical companies including <em>Pfizer</em> <em>Inc</em>., AbbVie Inc., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "9888.HK",
+                            "name": "Baidu, Inc.",
+                            "exchange": "HKEX",
+                            "exchange_long": "Hong Kong Stock Exchange",
+                            "country": "hk",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 10.903753,
+                            "sentiment_score": 0.6997,
+                            "highlights": [
+                                {
+                                    "highlight": "., and <em>Baidu</em> <em>Inc</em>. Clean Power Democrats recently passed a landmark climate law that includes generous long-term subsidies for clean-power installations. Even though no Republicans in Congress supported the bill, it\u2019s highly unlikely these credits face any danger after the midterms.",
+                                    "sentiment": 0.6997,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABBV34.SA",
+                            "name": "AbbVie Inc.",
+                            "exchange": "BVMF",
+                            "exchange_long": "The B3 S.A. - Brasil, Bolsa, Balc\u00e3o",
+                            "country": "br",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 11.383292,
+                            "sentiment_score": -0.2617,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>AbbVie</em> <em>Inc</em>., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing. US-Listed Chinese Stocks A threat to delist Chinese stocks that trade on US exchanges but don\u2019t comply with Trump-era audit laws has backing from both Democrats and Republicans.",
+                                    "sentiment": -0.2617,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NEXT34.SA",
+                            "name": "NextEra Energy, Inc.",
+                            "exchange": "BVMF",
+                            "exchange_long": "The B3 S.A. - Brasil, Bolsa, Balc\u00e3o",
+                            "country": "br",
+                            "type": "equity",
+                            "industry": "Utilities",
+                            "match_score": 16.097197,
+                            "sentiment_score": 0.4767,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer <em>NextEra</em> <em>Energy</em> <em>Inc</em>. and rooftop-solar installer Sunrun Inc. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.4767,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "BAIDF",
+                            "name": "BAIDU INC",
+                            "exchange": "OTC",
+                            "exchange_long": "Over-the-counter Markets",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 10.903616,
+                            "sentiment_score": 0.6997,
+                            "highlights": [
+                                {
+                                    "highlight": "., and <em>Baidu</em> <em>Inc</em>. Clean Power Democrats recently passed a landmark climate law that includes generous long-term subsidies for clean-power installations. Even though no Republicans in Congress supported the bill, it\u2019s highly unlikely these credits face any danger after the midterms.",
+                                    "sentiment": 0.6997,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGL.BA",
+                            "name": "Alphabet Inc.",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.203852,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "CVXD.BA",
+                            "name": "CHEVRON CORP",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 10.783614,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including Phillips 66, Exxon Mobil Corp. and <em>Chevron</em> <em>Corp</em>. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PFED.BA",
+                            "name": "PFIZER INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 8.118377,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Pharmaceutical companies including <em>Pfizer</em> <em>Inc</em>., AbbVie Inc., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "BIDU.BA",
+                            "name": "Baidu, Inc.",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 10.905043,
+                            "sentiment_score": 0.6997,
+                            "highlights": [
+                                {
+                                    "highlight": "., and <em>Baidu</em> <em>Inc</em>. Clean Power Democrats recently passed a landmark climate law that includes generous long-term subsidies for clean-power installations. Even though no Republicans in Congress supported the bill, it\u2019s highly unlikely these credits face any danger after the midterms.",
+                                    "sentiment": 0.6997,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "BIDUD.BA",
+                            "name": "BAIDU INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 10.905043,
+                            "sentiment_score": 0.6997,
+                            "highlights": [
+                                {
+                                    "highlight": "., and <em>Baidu</em> <em>Inc</em>. Clean Power Democrats recently passed a landmark climate law that includes generous long-term subsidies for clean-power installations. Even though no Republicans in Congress supported the bill, it\u2019s highly unlikely these credits face any danger after the midterms.",
+                                    "sentiment": 0.6997,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "XOMD.BA",
+                            "name": "EXXON MOBIL CORP",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 17.699862,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including Phillips 66, <em>Exxon</em> <em>Mobil</em> <em>Corp</em>. and Chevron Corp. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "INTCD.BA",
+                            "name": "INTEL CORP",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 8.894192,
+                            "sentiment_score": 0.3612,
+                            "highlights": [
+                                {
+                                    "highlight": "Under that legislation, firms with large R&D spending like <em>Intel</em> <em>Corp</em>. and Amazon.com Inc. could fully deduct those costs during the year in which they occurred as opposed to having to write them off over of the span of five years.",
+                                    "sentiment": 0.3612,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PSX.BA",
+                            "name": "Phillips 66",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 12.320225,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including <em>Phillips</em> <em>66</em>, Exxon Mobil Corp. and Chevron Corp. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABBV.BA",
+                            "name": "AbbVie Inc.",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 11.385248,
+                            "sentiment_score": -0.2617,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>AbbVie</em> <em>Inc</em>., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing. US-Listed Chinese Stocks A threat to delist Chinese stocks that trade on US exchanges but don\u2019t comply with Trump-era audit laws has backing from both Democrats and Republicans.",
+                                    "sentiment": -0.2617,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PSXD.BA",
+                            "name": "PHILLIPS 66",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 12.320225,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including <em>Phillips</em> <em>66</em>, Exxon Mobil Corp. and Chevron Corp. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOGLD.BA",
+                            "name": "ALPHABET INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 9.203851,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "DXOM2.BA",
+                            "name": "EXXON MOBIL CORP",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "Energy",
+                            "match_score": 17.699862,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including Phillips 66, <em>Exxon</em> <em>Mobil</em> <em>Corp</em>. and Chevron Corp. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABBVD.BA",
+                            "name": "ABBVIE INC",
+                            "exchange": "BCBA",
+                            "exchange_long": "Buenos Aires Stock Exchange",
+                            "country": "ar",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 11.385248,
+                            "sentiment_score": -0.2617,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>AbbVie</em> <em>Inc</em>., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing. US-Listed Chinese Stocks A threat to delist Chinese stocks that trade on US exchanges but don\u2019t comply with Trump-era audit laws has backing from both Democrats and Republicans.",
+                                    "sentiment": -0.2617,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZN.SN",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 9.618976,
+                            "sentiment_score": 0.3612,
+                            "highlights": [
+                                {
+                                    "highlight": "Under that legislation, firms with large R&D spending like Intel Corp. and <em>Amazon.com</em> <em>Inc</em>. could fully deduct those costs during the year in which they occurred as opposed to having to write them off over of the span of five years.",
+                                    "sentiment": 0.3612,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGL.SN",
+                            "name": "Alphabet Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.203616,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOG.SN",
+                            "name": "Alphabet Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.203616,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZNCL.SN",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 9.618758,
+                            "sentiment_score": 0.3612,
+                            "highlights": [
+                                {
+                                    "highlight": "Under that legislation, firms with large R&D spending like Intel Corp. and <em>Amazon.com</em> <em>Inc</em>. could fully deduct those costs during the year in which they occurred as opposed to having to write them off over of the span of five years.",
+                                    "sentiment": 0.3612,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGCL.SN",
+                            "name": "Alphabet Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 9.203616,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "XOMCL.SN",
+                            "name": "EXXON MOBIL CORP",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 17.698576,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including Phillips 66, <em>Exxon</em> <em>Mobil</em> <em>Corp</em>. and Chevron Corp. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PFECL.SN",
+                            "name": "PFIZER INC",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 8.118296,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Pharmaceutical companies including <em>Pfizer</em> <em>Inc</em>., AbbVie Inc., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "INTCCL.SN",
+                            "name": "INTEL CORP",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 8.894045,
+                            "sentiment_score": 0.3612,
+                            "highlights": [
+                                {
+                                    "highlight": "Under that legislation, firms with large R&D spending like <em>Intel</em> <em>Corp</em>. and Amazon.com Inc. could fully deduct those costs during the year in which they occurred as opposed to having to write them off over of the span of five years.",
+                                    "sentiment": 0.3612,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PFE.SN",
+                            "name": "Pfizer Inc.",
+                            "exchange": "SSE",
+                            "exchange_long": "Santiago Stock Exchange",
+                            "country": "cl",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 8.118296,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Pharmaceutical companies including <em>Pfizer</em> <em>Inc</em>., AbbVie Inc., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZ.DE",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 9.619007,
+                            "sentiment_score": 0.3612,
+                            "highlights": [
+                                {
+                                    "highlight": "Under that legislation, firms with large R&D spending like Intel Corp. and <em>Amazon.com</em> <em>Inc</em>. could fully deduct those costs during the year in which they occurred as opposed to having to write them off over of the span of five years.",
+                                    "sentiment": 0.3612,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "4AB.DE",
+                            "name": "AbbVie Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 11.381907,
+                            "sentiment_score": -0.2617,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>AbbVie</em> <em>Inc</em>., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing. US-Listed Chinese Stocks A threat to delist Chinese stocks that trade on US exchanges but don\u2019t comply with Trump-era audit laws has backing from both Democrats and Republicans.",
+                                    "sentiment": -0.2617,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABEA.DE",
+                            "name": "Alphabet Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.20399,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PFE.DE",
+                            "name": "Pfizer Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 8.118818,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Pharmaceutical companies including <em>Pfizer</em> <em>Inc</em>., AbbVie Inc., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABEC.DE",
+                            "name": "Alphabet Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.203938,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "3S9.DE",
+                            "name": "Sunrun Inc.",
+                            "exchange": "XETRA",
+                            "exchange_long": "Deutsche B\u00f6rse Xetra",
+                            "country": "de",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 13.139956,
+                            "sentiment_score": 0.5647,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer NextEra Energy Inc. and rooftop-solar installer <em>Sunrun</em> <em>Inc</em>. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.5647,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "AMZN.MX",
+                            "name": "Amazon.com, Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Consumer Cyclical",
+                            "match_score": 9.618892,
+                            "sentiment_score": 0.3612,
+                            "highlights": [
+                                {
+                                    "highlight": "Under that legislation, firms with large R&D spending like Intel Corp. and <em>Amazon.com</em> <em>Inc</em>. could fully deduct those costs during the year in which they occurred as opposed to having to write them off over of the span of five years.",
+                                    "sentiment": 0.3612,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOGL.MX",
+                            "name": "Alphabet Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.203925,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "ABBV.MX",
+                            "name": "AbbVie Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 11.381035,
+                            "sentiment_score": -0.2617,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>AbbVie</em> <em>Inc</em>., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing. US-Listed Chinese Stocks A threat to delist Chinese stocks that trade on US exchanges but don\u2019t comply with Trump-era audit laws has backing from both Democrats and Republicans.",
+                                    "sentiment": -0.2617,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "GOOG.MX",
+                            "name": "Alphabet Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 9.203925,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Big Tech Major US technology companies, from <em>Alphabet</em> <em>Inc</em>. to Meta Platforms Inc., have long been thought to be a target for potential regulation.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "BIDUN.MX",
+                            "name": "Baidu, Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 10.902935,
+                            "sentiment_score": 0.6997,
+                            "highlights": [
+                                {
+                                    "highlight": "., and <em>Baidu</em> <em>Inc</em>. Clean Power Democrats recently passed a landmark climate law that includes generous long-term subsidies for clean-power installations. Even though no Republicans in Congress supported the bill, it\u2019s highly unlikely these credits face any danger after the midterms.",
+                                    "sentiment": 0.6997,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PFE.MX",
+                            "name": "Pfizer Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Healthcare",
+                            "match_score": 8.11892,
+                            "sentiment_score": 0,
+                            "highlights": [
+                                {
+                                    "highlight": "Pharmaceutical companies including <em>Pfizer</em> <em>Inc</em>., AbbVie Inc., Eli Lilly & Co. and Merck & Co. could all see their revenue outlooks impacted by any changes to rules on drug pricing.",
+                                    "sentiment": 0,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PDDN.MX",
+                            "name": "Pinduoduo Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 11.928479,
+                            "sentiment_score": 0.6997,
+                            "highlights": [
+                                {
+                                    "highlight": "., <em>Pinduoduo</em> <em>Inc</em>., and Baidu Inc. Clean Power Democrats recently passed a landmark climate law that includes generous long-term subsidies for clean-power installations. Even though no Republicans in Congress supported the bill, it\u2019s highly unlikely these credits face any danger after the midterms.",
+                                    "sentiment": 0.6997,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "NEE.MX",
+                            "name": "NextEra Energy, Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Utilities",
+                            "match_score": 16.085938,
+                            "sentiment_score": 0.4767,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer <em>NextEra</em> <em>Energy</em> <em>Inc</em>. and rooftop-solar installer Sunrun Inc. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.4767,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "RUN.MX",
+                            "name": "Sunrun Inc.",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Technology",
+                            "match_score": 13.130734,
+                            "sentiment_score": 0.5647,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer NextEra Energy Inc. and rooftop-solar installer <em>Sunrun</em> <em>Inc</em>. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.5647,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "PSX.MX",
+                            "name": "PHILLIPS 66",
+                            "exchange": "BMV",
+                            "exchange_long": "Mexican Stock Exchange",
+                            "country": "mx",
+                            "type": "equity",
+                            "industry": "Energy",
+                            "match_score": 12.319191,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including <em>Phillips</em> <em>66</em>, Exxon Mobil Corp. and Chevron Corp. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "0K80.L",
+                            "name": "NextEra Energy, Inc.",
+                            "exchange": "LSE",
+                            "exchange_long": "London Stock Exchange",
+                            "country": "gb",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 16.08204,
+                            "sentiment_score": 0.4767,
+                            "highlights": [
+                                {
+                                    "highlight": "This bodes well for developer <em>NextEra</em> <em>Energy</em> <em>Inc</em>. and rooftop-solar installer Sunrun Inc. Biden still has another two years in his term \u2014 and the climate package is a signature achievement that he will be keen to protect.\n\nAdvertisement 7 Story continues below This advertisement has not loaded yet, but your article continues below.",
+                                    "sentiment": 0.4767,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        },
+                        {
+                            "symbol": "0KHZ.L",
+                            "name": "Phillips 66",
+                            "exchange": "LSE",
+                            "exchange_long": "London Stock Exchange",
+                            "country": "gb",
+                            "type": "equity",
+                            "industry": "N/A",
+                            "match_score": 12.319195,
+                            "sentiment_score": -0.836,
+                            "highlights": [
+                                {
+                                    "highlight": "While the Biden administration\u2019s recent threat to impose a windfall tax on oil producers initially sent companies including <em>Phillips</em> <em>66</em>, Exxon Mobil Corp. and Chevron Corp. lower, such a proposal is likely to be blocked by Republican lawmakers.",
+                                    "sentiment": -0.836,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "uuid": "3291b5cf-5c58-4a63-a1c0-db633b9ba218",
+            "title": "Meta Lesson 1: Corporate Governance",
+            "description": "As we get deeper into earnings season for the third quarter of 2022, the biggest negative surprises are coming from technology companies, with the tech giants leading the way.",
+            "keywords": "",
+            "snippet": "Derick Hudson\n\nAs we get deeper into earnings season for the third quarter of 2022, the biggest negative surprises are coming from technology companies, with th...",
+            "url": "https://seekingalpha.com/article/4553593-meta-lesson-1-corporate-governance",
+            "image_url": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1359152239/image_1359152239.jpg?io=getty-c-w750",
+            "language": "en",
+            "published_at": "2022-11-05T11:58:00.000000Z",
+            "source": "seekingalpha.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 3.993389,
+                    "sentiment_score": 0.5106,
+                    "highlights": [
+                        {
+                            "highlight": "Facebook (or Meta (<em>NASDAQ:META</em>), if you prefer its new name), in particular, has been in the eye of the storm, down more than 75% from the trillion-dollar market capitalization that it enjoyed just over a year ago.",
+                            "sentiment": 0.5106,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "1e07802d-f1a5-4653-b30d-e191e45aaccf",
+            "title": "Meta Platforms: Cheap PE; Could Outperform Tech Sector Average",
+            "description": "The tech sector is currently suffering the worst correction in a decade. Check here to see why Meta is one of the better choices within the sector.",
+            "keywords": "",
+            "snippet": "Justin Sullivan/Getty Images News\n\nThesis\n\nThe tech sector is currently suffering the worst correction in a decade, as you can see from the following chart. Usi...",
+            "url": "https://seekingalpha.com/article/4553592-qqq-attractive-at-22x-pe-meta-platforms-only-9x",
+            "image_url": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1394271225/image_1394271225.jpg?io=getty-c-w750",
+            "language": "en",
+            "published_at": "2022-11-05T11:56:08.000000Z",
+            "source": "seekingalpha.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 6.644886,
+                    "sentiment_score": -0.6705,
+                    "highlights": [
+                        {
+                            "highlight": "And this leads me to the main topic for today, Meta Platforms (<em>NASDAQ:META</em>). As seen, META has suffered a much larger loss of 76.7% off its recent peak (which, BTW, would take a 329% rally to break even \u2013 if it ever does).",
+                            "sentiment": -0.6705,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "d30cb96c-2d66-40fa-89ad-ad7c3461f091",
+            "title": "Is the Meta share price too cheap to ignore?",
+            "description": "With shares of Meta Platforms down 74% over the last 12 months, has the Meta share price reached a level where it\u2019s too cheap to ignore?",
+            "keywords": "",
+            "snippet": "Shares of Meta Platforms have been in freefall this year. Our author looks at the business to see if the Meta share price is a bargain right now.\n\nYou\u2019re read...",
+            "url": "https://www.fool.co.uk/2022/11/05/is-the-meta-share-price-too-cheap-to-ignore/",
+            "image_url": "https://www.fool.co.uk/wp-content/uploads/2022/10/Worried-investor.jpg",
+            "language": "en",
+            "published_at": "2022-11-05T09:53:07.000000Z",
+            "source": "fool.co.uk",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 11.00324,
+                    "sentiment_score": 0.296,
+                    "highlights": [
+                        {
+                            "highlight": "If I\u2019d invested \u00a31,000 in shares of Meta Platforms (<em>NASDAQ:META</em>) a year ago, I\u2019d be able to sell my investment for \u00a3265 today. In other words, the Meta share price has fallen by 74% in the last 12 months.\n\nThe number of users on the company\u2019s social media platforms, though, is as high as it\u2019s ever been.",
+                            "sentiment": 0.296,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "a179ae03-6f98-477d-b39e-03f8c7e8e493",
+            "title": "Apple and Google stocks both had their worst week in more than two years",
+            "description": "Shares of Apple Inc. and Alphabet Inc. both suffered their largest weekly declines since the beginning days of the pandemic as Big Tech companies continued...",
+            "keywords": "article_normal, Computers/Electronics, Market Research/Public Relations, Public Relations, Internet Search Engines, Advertising/Marketing/Public Relations, Business/Consumer Services, Internet/Online Services, Technology, Financial Performance, Share Price Movement/Disruptions, Corporate/Industrial News, Equity Markets, Commodity/Financial Market News, Content Types, Factiva Filters, C&E Exclusion Filter, C&E Industry News Filter, Headline-Only Content, Apple Inc., AAPL, Alphabet Inc. Cl A, GOOGL, Alphabet Inc. Cl C, GOOG, financial performance, share price movement, disruptions, corporate, industrial news, equity markets, commodity, financial market news, content types, factiva filters, c&e exclusion filter, c&e industry news filter, headline-only content, computers, electronics, market research, public relations, internet search engines, advertising, marketing, business, consumer services, internet, online services, technology",
+            "snippet": "Shares of Apple Inc. and Alphabet Inc. both suffered their largest weekly declines since the beginning days of the pandemic this week, as Big Tech companies con...",
+            "url": "https://www.marketwatch.com/story/apple-and-google-stocks-both-had-their-worst-week-in-more-than-two-years-11667593516",
+            "image_url": "https://images.mktw.net/im-600149/social",
+            "language": "en",
+            "published_at": "2022-11-04T19:25:00.000000Z",
+            "source": "marketwatch.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 15.395134,
+                    "sentiment_score": -0.3832,
+                    "highlights": [
+                        {
+                            "highlight": "AMZN, +1.88% , and <em>Meta</em> <em>Platforms</em> <em>Inc</em>. META, +2.11% , concluding that \u201cperfection is required from here\u201d for the three tech giants since Wall Street has less patience for weak performance in any one of their many business areas.",
+                            "sentiment": -0.3832,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "76404c6e-ef4b-47f3-81ee-abb6d0a55d59",
+            "title": "Meta Platforms Unusual Options Activity - Meta Platforms (NASDAQ:META)",
+            "description": "Someone with a lot of money to spend has taken a bearish stance on Meta Platforms (NASDAQ:META). And retail traders should know. We noticed this today when the big position showed up on publicly available options history that we track here at Benzinga.",
+            "keywords": "",
+            "snippet": "Someone with a lot of money to spend has taken a bearish stance on Meta Platforms META.\n\nAnd retail traders should know.\n\nWe noticed this today when the big pos...",
+            "url": "https://www.benzinga.com/markets/options/22/11/29576348/meta-platforms-unusual-options-activity",
+            "image_url": "https://cdn.benzinga.com/files/images/story/2022/movers_image_20801.jpeg?width=1200&height=800&fit=crop",
+            "language": "en",
+            "published_at": "2022-11-04T19:09:17.000000Z",
+            "source": "benzinga.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 43.37775,
+                    "sentiment_score": 0,
+                    "highlights": [
+                        {
+                            "highlight": "Meta Platforms Unusual Options Activity - Meta Platforms (<em>NASDAQ:META</em>)",
+                            "sentiment": 0,
+                            "highlighted_in": "title"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "c174ab3b-b866-4371-9844-a3ad0419ed43",
+            "title": "The Shrinking Trillion Dollar Market Cap Club",
+            "description": "Aggressive tightening from the Federal Reserve has caused tech stocks to plummet back to Earth in 2022, and this has shaken up the membership of the trillion dollar market cap club.",
+            "keywords": "",
+            "snippet": "Aggressive tightening from the Federal Reserve has caused tech stocks to plummet back to Earth in 2022, and this has shaken up the membership of the trillion do...",
+            "url": "https://www.valuewalk.com/the-shrinking-trillion-dollar-market-cap-club/",
+            "image_url": "https://www.valuewalk.com/wp-content/uploads/2021/07/Money_1627307597.jpg",
+            "language": "en",
+            "published_at": "2022-11-04T18:30:33.000000Z",
+            "source": "valuewalk.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 23.576248,
+                    "sentiment_score": 0.1027,
+                    "highlights": [
+                        {
+                            "highlight": "<em>Meta</em> <em>Platforms</em> <em>Inc</em> (<em>NASDAQ:META</em>), on the other hand, isn\u2019t just going through tough times, it\u2019s the worst performer in the entire S&P 500 this year so far.\n\nInvestors are bearish on Mark Zuckerberg\u2019s expensive leap of faith that is the \u201cmetaverse\u201d \u2013 a virtual reality world that people access via headsets (e.g. Meta Quest).",
+                            "sentiment": 0.1027,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "07c9d1ca-5031-476d-a79c-24f20e39e90c",
+            "title": "Elon Musk says Twitter suffered \u2018massive\u2019 revenue drop due to activist group pressure on advertisers",
+            "description": "A letter has been sent to Twitter's top 20 largest advertisers, urging them to cease advertising on the platform as Elon Musk rolls back its current content-moderation practices.",
+            "keywords": "",
+            "snippet": "Elon Musk says that activist groups pressuring Twitter advertisers have cause the social media giant to see a \"massive drop in revenue.\"\n\n\"Twitter has had a mas...",
+            "url": "https://www.foxbusiness.com/technology/elon-musk-says-twitter-suffered-massive-revenue-drop-activist-group-pressure-advertisers",
+            "image_url": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2022/08/0/0/Elon-Musk-Twitter-Takeover-Deal-Notice.jpg?ve=1&tl=1",
+            "language": "en",
+            "published_at": "2022-11-04T16:42:45.000000Z",
+            "source": "foxbusiness.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 10.482851,
+                    "sentiment_score": 0,
+                    "highlights": [
+                        {
+                            "highlight": "INC. 98.75 -0.65 -0.65% META <em>META</em> <em>PLATFORMS</em> <em>INC</em>. 89.40 +0.49 +0.55% MDLZ MONDELEZ INTERNATIONAL INC. 62.00 -0.58 -0.93% PEP PEPSICO INC. 177.78 -0.46 -0.26% PG PROCTER & GAMBLE CO. 132.03 -0.91 -0.68% UL UNILEVER PLC 44.62 -0.30 -0.67% VZ VERIZON COMMUNICATIONS INC. 37.15 -0.56 -1.49%\n\nA spokesperson for HBO told FOX Business it would be \"assessing",
+                            "sentiment": 0,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "dc31af41-426e-4457-bd51-13c2611c5bb9",
+            "title": "Top 5 3rd Quarter Trades of IEQ CAPITAL, LLC",
+            "description": "GuruFocus Article or News written by insider and the topic is about:",
+            "keywords": "GuruFocus, Article, News, insider, META, HCP, AAPL, 48D, TEAM",
+            "snippet": "IEQ CAPITAL, LLC recently filed their 13F report for the third quarter of 2022, which ended on 2022-09-30.\n\nThe 13F report details which stocks were in a guru?...",
+            "url": "https://www.gurufocus.com/news/1885767/top-5-3rd-quarter-trades-of-ieq-capital-llc",
+            "image_url": "https://static.gurufocus.com/images/logo_global.png",
+            "language": "en",
+            "published_at": "2022-11-04T15:00:24.000000Z",
+            "source": "gurufocus.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 14.813755,
+                    "sentiment_score": 0.6719,
+                    "highlights": [
+                        {
+                            "highlight": "On 11/04/2022, <em>Meta</em> <em>Platforms</em> <em>Inc</em> traded for a price of $89.76 per share and a market cap of $238.35Bil. The stock has returned -73.23% over the past year.\n\nGuruFocus gives the company a financial strength rating of 8 out of 10 and a profitability rating of 10 out of 10.",
+                            "sentiment": 0.7579,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "In terms of valuation, <em>Meta</em> <em>Platforms</em> <em>Inc</em> has a price-earnings ratio of 8.57, a price-book ratio of 1.95, a price-earnings-to-growth (PEG) ratio of 0.32, a EV-to-Ebitda ratio of 5.22 and a price-sales ratio of 2.13.\n\nThe price-to-GF Value ratio is 0.23, earning the stock a GF Value rank of 2.",
+                            "sentiment": 0.5859,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "059d7754-12d6-44d1-b291-dce314c8cc75",
+            "title": "VIDEO - The Juicy Fields Ponzi Saga: Facebook, Forbes, Google, YouTube, CNN Now Being Sued? - Meta Platforms (NASDAQ:META), Alphabet (NASDAQ:GOOGL)",
+            "description": "Remember the recent massive Ponzi scheme organized by marijuana investment platform JuicyFields?",
+            "keywords": "",
+            "snippet": "Remember the recent massive Ponzi scheme organized by marijuana investment platform JuicyFields?\n\nThe pyramid scam that guaranteed 66% returns in three months t...",
+            "url": "https://www.benzinga.com/markets/cannabis/22/11/29571449/video-the-juicy-fields-ponzi-saga-facebook-forbes-google-youtube-cnn-now-being-sued",
+            "image_url": "https://cdn.benzinga.com/files/images/story/2022/11/04/cannabis_insider.jpg?width=1200&height=800&fit=crop",
+            "language": "en",
+            "published_at": "2022-11-04T14:34:06.000000Z",
+            "source": "benzinga.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 30.675568,
+                    "sentiment_score": 0,
+                    "highlights": [
+                        {
+                            "highlight": "- Meta Platforms (<em>NASDAQ:META</em>), Alphabet (NASDAQ:GOOGL)",
+                            "sentiment": 0,
+                            "highlighted_in": "title"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "fc0d4586-9a33-4cb6-ab39-defb96fdd404",
+            "title": "15 Most Innovative Companies in the World",
+            "description": "In this article, we will take a look at 15 of the most innovative companies in the world.",
+            "keywords": "",
+            "snippet": "In this article, we will take a look at 15 of the most innovative companies in the world. If you want to see more of the most innovative companies in the world,...",
+            "url": "https://www.insidermonkey.com/blog/15-most-innovative-companies-in-the-world-1082289/",
+            "image_url": "https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2021/07/17133744/yogesh-phuyal-mjwGKmwkDDA-unsplash.jpg",
+            "language": "en",
+            "published_at": "2022-11-04T14:32:08.000000Z",
+            "source": "insidermonkey.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 31.10791,
+                    "sentiment_score": 0.42265,
+                    "highlights": [
+                        {
+                            "highlight": "<em>Meta</em> <em>Platforms</em>, <em>Inc</em>. (<em>NASDAQ:META</em>)\n\nAlthough its metaverse investment isn\u2019t going very well currently, <em>Meta</em> <em>Platforms</em>, <em>Inc</em>. (<em>NASDAQ:META</em>) is nevertheless a very innovative company given its substantial investments in AI. In terms of the future, there\u2019s also potential for <em>Meta</em> <em>Platforms</em>, <em>Inc</em>. (<em>NASDAQ:META</em>) if its metaverse product improves.",
+                            "sentiment": 0.8453,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "<em>Meta</em> <em>Platforms</em>, <em>Inc</em>. (<em>NASDAQ:META</em>) has already spent $15 billion on the metaverse and the company plans to invest tens of billions more.\n\n6.",
+                            "sentiment": 0,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "20f69958-8538-4eef-8b11-57d3d4d64811",
+            "title": "Employees at Elon Musk\u2019s Twitter brace for layoffs",
+            "description": "Employees are bracing for widespread layoffs at Twitter as new owner Elon Musk overhauls the social platform",
+            "keywords": "",
+            "snippet": "Employees are bracing for widespread layoffs at Twitter as new owner Elon Musk overhauls the social platform\n\nEmployees are bracing for widespread layoffs at Tw...",
+            "url": "https://www.thehindu.com/business/employees-at-elon-musks-twitter-brace-for-layoffs/article66096726.ece",
+            "image_url": "https://th-i.thgim.com/public/incoming/jwb1la/article66096832.ece/alternates/FREE_1200/AFP_32LG9WN.jpg",
+            "language": "en",
+            "published_at": "2022-11-04T14:14:37.000000Z",
+            "source": "thehindu.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 14.519398,
+                    "sentiment_score": -0.7579,
+                    "highlights": [
+                        {
+                            "highlight": "<em>Meta</em> <em>Platforms</em> <em>Inc</em>., Facebook\u2019s parent company, recently posted its second quarterly revenue decline in history and its shares are trading at their lowest levels since 2015. Meta\u2019s disappointing results followed weak earnings reports from Google parent Alphabet and even Microsoft.",
+                            "sentiment": -0.7579,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": [
+                {
+                    "uuid": "b453b2c3-e922-406c-b0ab-b27ec9228cb4",
+                    "title": "Employees at Elon Musk's Twitter brace for layoffs",
+                    "description": "Employees are bracing for widespread layoffs at Twitter as new owner Elon Musk overhauls the social platform",
+                    "keywords": "Corporate news, Corporate management, Executive changes, Layoffs, Media, Online media, Social media, Business, Personnel, General news, Elon Musk, Twitter Inc, Tesla Inc, Microsoft Corp, ",
+                    "snippet": "Employees are bracing for widespread layoffs at Twitter as new owner Elon Musk overhauls the social platform\n\nFILE - A receptionist works in the lobby of the bu...",
+                    "url": "https://abcnews.go.com/Business/wireStory/employees-elon-musks-twitter-brace-layoffs-92657257",
+                    "image_url": "https://s.abcnews.com/images/Business/WireAP_25c120169e034f0e83c0a17c2cd680f2_16x9_992.jpg",
+                    "language": "en",
+                    "published_at": "2022-11-04T11:38:02.000000Z",
+                    "source": "abcnews.go.com",
+                    "relevance_score": null,
+                    "entities": [
+                        {
+                            "symbol": "META",
+                            "name": "Meta Platforms Inc",
+                            "exchange": "NASDAQ",
+                            "exchange_long": "NASDAQ Stock Exchange",
+                            "country": "us",
+                            "type": "equity",
+                            "industry": "Communication Services",
+                            "match_score": 13.390083,
+                            "sentiment_score": -0.7579,
+                            "highlights": [
+                                {
+                                    "highlight": "<em>Meta</em> <em>Platforms</em> <em>Inc</em>., Facebook\u2019s parent company, recently posted its second quarterly revenue decline in history and its shares are trading at their lowest levels since 2015. Meta\u2019s disappointing results followed weak earnings reports from Google parent Alphabet and even Microsoft.",
+                                    "sentiment": -0.7579,
+                                    "highlighted_in": "main_text"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "uuid": "f5cd8445-1370-4103-a37f-f90a2e7c2338",
+            "title": "Wide-Moat Stocks On Sale: November 2022 Heat Map",
+            "description": "Our 3-step process focuses on wide-moat stocks (as per Morningstar\u2019s rating). Check here to see the heat map of the most investable candidates.",
+            "keywords": "",
+            "snippet": "ValeryEgorov\n\nStep One: Wide-moat stocks with 5-star and 4-star ratings\n\nHistorical evidence says that while quality alone is a poor indicator of outperformance...",
+            "url": "https://seekingalpha.com/article/4553103-wide-moat-stocks-on-sale-the-november-2022-heat-map",
+            "image_url": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/912585074/image_912585074.jpg?io=getty-c-w750",
+            "language": "en",
+            "published_at": "2022-11-04T13:40:59.000000Z",
+            "source": "seekingalpha.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 12.06436,
+                    "sentiment_score": -0.2139,
+                    "highlights": [
+                        {
+                            "highlight": "Here are they:\n\nCompany Name Ticker Alphabet Inc A GOOGL Cisco Systems CSCO Comcast Corp Class A CMCSA Compass Minerals International CMP Ecolab Inc ECL Equifax Inc EFX Etsy Inc ETSY <em>Meta</em> <em>Platforms</em> <em>Inc</em> META Guidewire Software Inc GWRE International Flavors & Fragrances IFF Masco Corp MAS Microsoft Corp MSFT Polaris Inc PII Teradyne Inc TER The Estee",
+                            "sentiment": 0,
+                            "highlighted_in": "main_text"
+                        },
+                        {
+                            "highlight": "Robinson Worldwide Inc CHRW CME Group Inc Class A CME Comcast Corp Class A CMCSA Equifax Inc EFX Experian PLC OTCQX:EXPGY Fanuc Corp OTCPK:FANUY Intercontinental Exchange Inc ICE KLA Corp KLAC Lam Research Corp LRCX Lowe's Companies Inc LOW MarketAxess Holdings Inc MKTX Masco Corp MAS Mastercard Inc A MA MercadoLibre Inc MELI <em>Meta</em> <em>Platforms</em> <em>Inc</em> META",
+                            "sentiment": -0.4278,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "f30cbccb-385a-482a-a675-3215a953d4d5",
+            "title": "Twitter employees brace for layoffs today as Elon Musk's takeover continues",
+            "description": "In a letter to employees obtained by multiple media outlets, the company said employees would find out today if they had been laid off. The email did not say how many people would lose their jobs.",
+            "keywords": "",
+            "snippet": "Twitter employees brace for layoffs today as Elon Musk's takeover continues\n\nEnlarge this image toggle caption Mary Altaffer/AP Mary Altaffer/AP\n\nNEW YORK \u2014 E...",
+            "url": "https://www.npr.org/2022/11/04/1134263184/twitter-layoffs-elon-musk",
+            "image_url": "https://media.npr.org/assets/img/2022/11/04/ap22308412238547_wide-c4e56eb9cc06eac846f6846c6f278aa94f0f7aff-s1400-c100.jpg",
+            "language": "en",
+            "published_at": "2022-11-04T13:18:02.000000Z",
+            "source": "npr.org",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 14.944014,
+                    "sentiment_score": -0.7579,
+                    "highlights": [
+                        {
+                            "highlight": "<em>Meta</em> <em>Platforms</em> <em>Inc</em>., Facebook's parent company, recently posted its second quarterly revenue decline in history and its shares are trading at their lowest levels since 2015. Meta's disappointing results followed weak earnings reports from Google parent Alphabet and even Microsoft.",
+                            "sentiment": -0.7579,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "f7e2b2b4-2d4a-4120-bcee-b3610191d91b",
+            "title": "Employees at Elon Musk's Twitter brace for layoffs",
+            "description": "Employees are bracing for widespread layoffs at Twitter as new owner Elon Musk overhauls the social platform",
+            "keywords": "Corporate news, Corporate management, Executive changes, Layoffs, Media, Online media, Social media, Business, Personnel, General news, Elon Musk, Twitter Inc, Tesla Inc, Microsoft Corp, ",
+            "snippet": "Employees are bracing for widespread layoffs at Twitter as new owner Elon Musk overhauls the social platform\n\nFILE - A receptionist works in the lobby of the bu...",
+            "url": "https://abcnews.go.com/Business/wireStory/employees-elon-musks-twitter-brace-layoffs-92657258",
+            "image_url": "https://s.abcnews.com/images/Business/WireAP_25c120169e034f0e83c0a17c2cd680f2_16x9_992.jpg",
+            "language": "en",
+            "published_at": "2022-11-04T11:38:16.000000Z",
+            "source": "abcnews.go.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 13.390083,
+                    "sentiment_score": -0.7579,
+                    "highlights": [
+                        {
+                            "highlight": "<em>Meta</em> <em>Platforms</em> <em>Inc</em>., Facebook\u2019s parent company, recently posted its second quarterly revenue decline in history and its shares are trading at their lowest levels since 2015. Meta\u2019s disappointing results followed weak earnings reports from Google parent Alphabet and even Microsoft.",
+                            "sentiment": -0.7579,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "5021eeff-1da7-4f4b-85fb-c46146b792dc",
+            "title": "Employees at Elon Musk's Twitter brace for layoffs",
+            "description": "NEW YORK (AP) \u2014 Employees braced for widespread layoffs at Twitter Friday as new owner Elon Musk overhauls the social platform.",
+            "keywords": "",
+            "snippet": "This advertisement has not loaded yet, but your article continues below.\n\nGetting a head start on tax-loss selling? Keep these five things in mind\n\nTelus doesn'...",
+            "url": "https://financialpost.com/pmn/business-pmn/employees-at-elon-musks-twitter-brace-for-layoffs",
+            "image_url": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2022/11/nybz502-the-associated-press.jpg",
+            "language": "en",
+            "published_at": "2022-11-04T11:34:48.000000Z",
+            "source": "financialpost.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 12.43469,
+                    "sentiment_score": -0.7579,
+                    "highlights": [
+                        {
+                            "highlight": "<em>Meta</em> <em>Platforms</em> <em>Inc</em>., Facebook\u2019s parent company, recently posted its second quarterly revenue decline in history and its shares are trading at their lowest levels since 2015. Meta\u2019s disappointing results followed weak earnings reports from Google parent Alphabet and even Microsoft.",
+                            "sentiment": -0.7579,
+                            "highlighted_in": "main_text"
+                        }
+                    ]
+                }
+            ],
+            "similar": []
+        },
+        {
+            "uuid": "80ee9751-dd20-4518-b44e-f009a463fa39",
+            "title": "Increase Your Service Company\u2019s Value With An IP Portfolio",
+            "description": "From trademarks to trade secrets\u2014however you choose to combine IP strategies\u2014think creatively about the packaging and promotion of your service-based business.",
+            "keywords": "A Reel, Instagram, Instagram Reel, Instagram Reels",
+            "snippet": "By Lisa Liu, senior partner at The Mitzel Group, startup founder, corporate attorney, board director, venture capitalist.\n\ngetty\n\nIntellectual property protecti...",
+            "url": "https://www.forbes.com/sites/theyec/2022/11/04/increase-your-service-companys-value-with-an-ip-portfolio/",
+            "image_url": "https://imageio.forbes.com/specials-images/imageserve/63640126ddfe6643a9da32d0/0x0.jpg?format=jpg&width=1200",
+            "language": "en",
+            "published_at": "2022-11-04T11:15:00.000000Z",
+            "source": "forbes.com",
+            "relevance_score": null,
+            "entities": [
+                {
+                    "symbol": "META",
+                    "name": "Meta Platforms Inc",
+                    "exchange": "NASDAQ",
+                    "exchange_long": "NASDAQ Stock Exchange",
+                    "country": "us",
+                    "type": "equity",
+                    "industry": "Communication Services",
+                    "match_score": 9.738445,
+                    "sentiment_score": -0.4019,
+                    "highlights": [
+                        {
+                            "highlight": "You might have seen the recent trademark dispute between MetaX LLC and the newly rebranded <em>Meta</em> <em>Platforms</em>, <em>Inc</em>. (the parent company of Facebook, which was also formerly known as Facebook).",
+                            "sentiment": -0.4019,
                             "highlighted_in": "main_text"
                         }
                     ]
