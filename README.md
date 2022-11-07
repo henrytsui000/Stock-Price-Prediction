@@ -17,6 +17,7 @@ $git clone git@github.com:henrytsui000/DataScienceProject.git
 $cd $THIS_PROJECT
 $conda create -n IDS python=3.8
 $conda activate IDS
+$pip install gdown
 $pip install -r requirements.txt
 ```
 
