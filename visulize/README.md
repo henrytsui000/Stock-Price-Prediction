@@ -2,55 +2,6 @@
 
 This is a project about my data science course, the main idea is a AI model through fuse the stock news title and past stock price to predict the stock price in the future.
 
-# Report
-
-You can find the report in this table.
-
-|      | HW1                              | HW2                  | HW3 | HW4 | HW5 |
-| ---- | -------------------------------- | -------------------- | --- | --- | --- |
-| Link | [PDF](./HWreport/HW1_109511068.pdf) | [MD](./HWreport/hw2.md) |     |     |     |
-
-# Set up environment
-
-```bash
-$git clone git@github.com:henrytsui000/DataScienceProject.git
-$cd $THIS_PROJECT
-$conda create -n IDS python=3.8
-$conda activate IDS
-$pip install -r requirements.txt
-```
-
-# Prepare Data
-
-There are two ways to get the news data and the stock price data:
-
-1. Run the python code to get the data. Your may apply an account at marketaux, and add a .env file which indicate the TOKEN
-
-```bash
-$python tools/update_data.py
-$python tools/update_news.py
-```
-
-2. Download the files which I upload to the Google Drive.
-
-```bash
-$gdown ${news.csv}
-$gdown ${price.csv}
-```
-
-And make the file like this:
-
-```
-./data
-├── News
-│   ├── FAANG_STOCK_NEWS.csv
-│   └── news.csv
-└── Stock
-    └── stock.csv
-
-2 directories, 3 files
-```
-
 # Visualize Data
 
 ## Mask Data
@@ -64,53 +15,80 @@ $\widehat{Loss}=\frac{Loss}{fac} = \frac{\sum^{D}_{i}{SD_i-SDM_i}}{D\cdot p}$
 
 $\widetilde{Loss} = \frac{\widehat{Loss}}{stock_{avg}} =  \frac{\sum^{D}_{i}{SD_i-SDM_i}}{D\cdot p \cdot stock_{avg}}$
 
-![](../src/mask/mask_difi.png)
-![](../src/mask/mask_difii.png)
-![](../src/mask/mask_difp.png)
-![](../src/mask/mask.png)
 
-![](../src/mask/maskmap.png)
+### Compared the methods of interpolation methods: interp1d, UnivariateSpline, Rbf, make_interp_spline, and LinearRegression
+|        | Loss value in 100 day          | Loss value in 1000 day           |
+| ------ | -------------------- | -------------------- |
+| Figure | ![](./../src/mask/mask_difii.png) | ![](./../src/mask/mask_difi.png) |
 
-Finally, the loss of these stock is fair:
+### The Risk, Mask values from Day[1000:0] to Day[10:0]
+|        | Mask Value          | Risk Value           |
+| ------ | -------------------- | -------------------- |
+| Figure | ![](../src/mask/mask.png) | ![](../src/trend/risk.png) |
+
+Finally, the loss of using interp1d to interpolate these stock is fair:
 
 | method   | meta   | goog   | amzn   | nflx   | aapl   |
 | -------- | ------ | ------ | ------ | ------ | ------ |
 | interp1d | 1.462% | 1.261% | 1.636% | 1.817% | 1.351% |
 
-```python
-LOSS = lambda ground, inter : np.around(np.sum(np.abs(ground-inter)), decimals = 2)
-NF = np.mean(SD, axis=0)*args.date*args.mask/100
-loss_table = loss_table.div(NF, axis=1)
-```
+### Mask ratio, loss and visualization
+
+|        | 2 months stock         | 1.5 years stock           |
+| ------ | -------------------- | -------------------- |
+| Figure |![](../src/mask/mask_difp.png) | ![](../src/mask/maskmap.png) |
+
+
 ## Price
-![](../src/trend/Recent1YearPrice.png)
-![](../src/trend/Recent2MonthPrice.png)
-![](../src/trend/risk.png)
-![](../src/EDA/AAPL_price.png)
-![](../src/EDA/AMZN_price.png)
-![](../src/EDA/FB_price.png)
-![](../src/EDA/GOOGL_price.png)
-![](../src/EDA/NFLX_price.png)
+
+After we draw the price in 2 months and 1.5 years, we found that every stock has a big correlation with others. For example, META(FB) and GOOG(google) in recent 2 months totally have the same rate of ups and downs. It's intuitive, because there are same type of the company. So they face the same marketing problems.Another example is in 1.5 years figure, the would ups and downs in same time.
+
+|        | Mask ratio & Mask loss         | Visualize random mask of different mask ratio           |
+| ------ | -------------------- | -------------------- |
+| Figure |![](../src/trend/Recent1YearPrice.png) | ![](../src/trend/Recent2MonthPrice.png)
+ |
+### FAANG's Candlestick Chart
+|        | <center>Figure</center>|
+| ------ | -------------------- |
+| META| ![](../src/EDA/FB_price.png) |
+|AMZN|![](../src/EDA/AMZN_price.png)|
+|AAPL|![](../src/EDA/AAPL_price.png)|
+|NFLX|![](../src/EDA/NFLX_price.png)|
+|GOOGL|![](../src/EDA/GOOGL_price.png)|
 
 
 ## News
+### Proportion of data in FAANG News.
 ![](../src/EDA/mount_new.png)
-![](../src/EDA/neg.png)
-![](../src/EDA/neg_all.png)
-![](../src/EDA/neu.png)
-![](../src/EDA/pos.png)
-![](../src/EDA/pos_all.png)
+### News Amount of Positive or Negative.
 ![](../src/EDA/pvn.png)
-## Correlation GIF
-![](../src/correlation/corr2.jpg)
-![](../src/correlation/corr1.jpg)
-![](../src/correlation/corr.jpg)
+### Box Chart of Positive news and Negaitve News of FAANG
 
+|        |<center>Figure</center>|
+| ------ | -------------------- |
+| Positive News of FAANG| ![](../src/EDA/pos.png) |
+|Negative News of FAANG|![](../src/EDA/neg.png)|
+|Neutral News of FAANG|![](../src/EDA/neu.png)|
+
+### Distribution of the good and bad values of the stocks
+|        | Negative News distribution    | Postive News distribution   |
+| ------ | -------------------- | -------------------- |
+| Figure |![](../src/EDA/neg_all.png)| ![](../src/EDA/pos_all.png)|
+
+
+
+
+## Correlation Heatmap
+|        | 500 days correlation   | 100 days correlation         |
+| ------ | -------------------- | -------------------- |
+| Figure | ![](../src/correlation/corr2.jpg) | ![](../src/correlation/corr1.jpg)
+ |
+### Correlation Gif
 ```bash
 $python correlation_gif.py
 ```
+![](https://i.imgur.com/wjYecB1.gif)
 
-# Experiment
 
 # Acknowledgement
 
