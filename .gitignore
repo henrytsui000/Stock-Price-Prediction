@@ -134,3 +134,4 @@ data/*
 .DS_Store
 
 runs/
+pretrained/
