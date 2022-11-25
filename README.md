@@ -46,12 +46,10 @@ The file structure you downloaded is as follows:
 
 ```
 ./data
-├── News
-│   └── news.csv
-└── Stock
-    └── stock.csv 
+├── news.csv
+└── stock.csv 
 
-2 directories, 2 files
+0 directories, 2 files
 ```
 
 ## Training Data
