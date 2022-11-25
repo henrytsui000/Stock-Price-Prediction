@@ -3,20 +3,20 @@
 # About
 
 This is a project about my data science course, the main idea is a AI model through fuse the stock news title and past stock price to predict the stock price in the future.
-
+<!-- 
 # Report
 
 You can find the report in this table.
 
 |      | HW1                              | HW2                  | HW3 | HW4 | HW5 |
 | ---- | -------------------------------- | -------------------- | --- | --- | --- |
-| Link | [PDF](./HWreport/HW1_109511068.pdf) | [MD](./HWreport/hw2.md) |     |     |     |
+| Link | [PDF](./HWreport/HW1_109511068.pdf) | [MD](./HWreport/hw2.md) |     |     |     | -->
 
 # Set up environment
 
 ```bash
 $git clone git@github.com:henrytsui000/DataScienceProject.git
-$cd $THIS_PROJECT
+$cd $(THIS_PROJECT)
 $conda create -n IDS python=3.8
 $conda activate IDS
 $pip install -r requirements.txt
@@ -26,6 +26,7 @@ $conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nv
 
 # Prepare Data
 
+## Raw Data
 There are two ways to get the news data and the stock price data:
 
 1. Run the python code to get the data. You may apply an account at marketaux, and add an .env file which indicate the TOKEN
@@ -51,6 +52,13 @@ The file structure you downloaded is as follows:
     └── stock.csv 
 
 2 directories, 2 files
+```
+
+## Training Data
+This step for transform data in news and stock to format data, easier for model reading.
+```bash
+$python make_bert.py
+$python make_regression.py
 ```
 
 # Visualize Data
