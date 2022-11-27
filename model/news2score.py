@@ -66,24 +66,24 @@ def get_loader(args):
     dataset = {x: Stock(s, args.name, args.max_len) for x, s in [("train", t0), ("valid", t1), ("test", t2)]}
     loader = {x: DataLoader(dataset[x], batch_size=args.batch_size, num_workers=24, shuffle=True) 
                                                 for x in ["train", "valid", "test"]}
+    logging.info("Finish Loading data")
     return loader
 
 def helper(args):
+    COMMENT = f"lr{args.lr}-B{args.batch_size}-EPS{args.epochs}"
     bert = Bert4price(args.name)
     bert = bert.to(args.device)
     criterion = nn.MSELoss()
     optimizer = torch.optim.Adam(bert.parameters(), lr = args.lr, weight_decay=1e-9)
     lr_sch = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=15)
-    COMMENT = f"lr{args.lr}-B{args.batch_size}-EPS{args.epochs}"
     writer = SummaryWriter(comment=COMMENT)
-
+    logging.info("Finish Build model")
     return bert, criterion, optimizer, lr_sch, writer
 
 def train(model, criterion, optimizer, lr_sch, writer, loader, args):
     min_loss = 1e10
     for epoch in range(args.epochs):
         for state in ["train", "valid"]:
-            clear_output(wait=True)
             tqdm_bar = tqdm(loader[state])
             tqdm_bar.set_description(f"[{epoch+1}/{args.epochs}]")
             loss_list = []
@@ -100,7 +100,6 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                     loss.backward()
                     optimizer.step()
                     lr_sch.step()
-                    
             avg_loss = sum(loss_list) / (len(loss_list)*args.batch_size)
             if avg_loss < min_loss:
                 min_loss = avg_loss
@@ -108,8 +107,13 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                     os.mkdir("./pretrained")
                 torch.save(model.state_dict(), f"./pretrained/bert_weight.pt")
             writer.add_scalar(f"{state}-loss", avg_loss, epoch)
+    else:
+        logging.info(f"Finish Training {args.epochs} epochs with loss:{min_loss}")
 
 def main(args):
+    logging.basicConfig()
+    logging.getLogger().setLevel(logging.INFO)
+    logging.info("start training news to price process")
     loader = get_loader(args)
     function = helper(args)
     train(*function, loader, args)
