@@ -14,7 +14,7 @@ revised_news["score"] = news["match"] * news["sentiment"]
 revised_news["datentime"] = pd.to_datetime(news['date']) + pd.to_timedelta(news['time'])
 
 
-pzmerge = pd.DataFrame()
+price_merge = pd.DataFrame()
 usdatecol = pd.DataFrame()
 for idx, new in tqdm(news.iterrows()):
     date = new["date"]
@@ -42,14 +42,13 @@ for idx, new in tqdm(news.iterrows()):
     nextprice = price.iloc[row.index+1][[symbol]]
     pz = pd.concat([preprice,nowprice,nextprice]).T
     pz.columns = ["preprice","nowprice","nextprice"]
-    pzmerge = pd.concat([pzmerge, pz])
+    price_merge = pd.concat([price_merge, pz])
 
 usdatecol.reset_index(level=0, inplace=True)
 revised_news["datentime"] = usdatecol[0]
-revised_news.to_csv("./data/revised_news.csv")
-revised_news = pd.read_csv("./data/revised_news.csv",index_col=0)
-df = revised_news.reset_index(drop=True)
-df1 = pzmerge.reset_index(drop=True)
-merge = pd.concat([df,df1], axis = 1)
-merge.to_csv("./data/bertdataset6.csv")
+revised_news = revised_news.reset_index(drop=True)
+revised_news.columns = [x[0] for x in revised_news.columns]
+price_merge = price_merge.reset_index(drop=True)
+merge = pd.concat([revised_news,price_merge], axis=1)
+merge.to_csv("./data/bert_dateset.csv",index=False)
 

@@ -3,6 +3,7 @@
 # About
 
 This is a project about my data science course, the main idea is a AI model through fuse the stock news title and past stock price to predict the stock price in the future.
+
 <!-- 
 # Report
 
@@ -20,13 +21,14 @@ $cd $(THIS_PROJECT)
 $conda create -n IDS python=3.8
 $conda activate IDS
 $pip install -r requirements.txt
-$conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 # install pytorch, please choose your cuda version
+$conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 ```
 
 # Prepare Data
 
 ## Raw Data
+
 There are two ways to get the news data and the stock price data:
 
 1. Run the python code to get the data. You may apply an account at marketaux, and add an .env file which indicate the TOKEN
@@ -53,7 +55,9 @@ The file structure you downloaded is as follows:
 ```
 
 ## Training Data
+
 This step for transform data in news and stock to format data, easier for model reading.
+
 ```bash
 $python make_bert.py
 $python make_regression.py
