@@ -14,3 +14,7 @@ tqdm
 yfinance
 oauthlib
 pyyaml
+transformers
+ipykernel
+python-dotenv
+

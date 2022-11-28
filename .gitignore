@@ -132,3 +132,6 @@ dmypy.json
 report/*
 data/*
 .DS_Store
+
+runs/
+pretrained/

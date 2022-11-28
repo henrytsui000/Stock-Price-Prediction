@@ -7,11 +7,11 @@ from argparse import ArgumentParser
 
 def make_parser():
     parser = ArgumentParser()
-    parser.add_argument("-p", "--path", type = str, default="./data/Stock/stock.csv")
+    parser.add_argument("-p", "--path", type = str, default="./data/stock.csv")
     parser.add_argument("-s", "--stock",type = str, default="META, GOOG, AMZN, NFLX, AAPL" )
     parser.add_argument("-f", "--force", action="store_false")
     parser.add_argument('-d', '--date', type = lambda s: dt.datetime.strptime(s, '%Y-%m-%d'), 
-                                            default = dt.datetime(2012, 1, 1))
+                                            default = dt.datetime(2020, 12, 1))
     return parser
 
 def check_dir():
