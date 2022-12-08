@@ -1,8 +1,30 @@
-# DataScienceProject
+# Stock Price Prediction
+
+# Contents
+
+- [Stock Price Prediction](#stock-price-prediction)
+- [Contents](#contents)
+- [About](#about)
+- [Set up environment](#set-up-environment)
+- [Prepare Data](#prepare-data)
+  - [Raw Data](#raw-data)
+  - [Training Data](#training-data)
+- [Visualize Data](#visualize-data)
+  - [More Detail](#more-detail)
+  - [Correlation GIF](#correlation-gif)
+- [Fine Tune BERT](#fine-tune-bert)
+- [Go Predict](#go-predict)
+- [Experiment](#experiment)
+- [Acknowledgement](#acknowledgement)
 
 # About
 
-This is a project about my data science course, the main idea is a AI model through fuse the stock news title and past stock price to predict the stock price in the future.
+This is a side project create by Lucy's and me, the main idea is use Bert model for fuse the stock news title and past stock price to predict the stock price in the future.
+
+What we notice when investing in stocks is that in addition to observing the past values of stocks and short-term changes in stocks. We also refer to the news of the stock market, that is, we refer to the buying and selling conditions of other investors or the operating conditions of the company. This is why simple models such as LSTM or DNN will be inaccurate in stock forecasting - it loses the fundamental value of the stock.
+
+Therefore, we hope to use bert to identify the positive or negative impact of news on stocks, that is, to use bert to solve downstream tasks. However, we are faced with a huge problem, we only have historical daily stock prices, not hourly or even minutely stock data. And representing dozens of news, their answers during training will be the same (news published within the same day).
+So we thought of another method: According to the free or fetching news API on the Internet, we can get the value of each news, and use this value as the ground truth of fine-tune. In inference, the average score of all news of the day is predicted as the predicted stock market rise.
 
 <!-- 
 # Report
@@ -59,7 +81,7 @@ The file structure you downloaded is as follows:
 This step for transform data in news and stock to format data, easier for model reading.
 
 ```bash
-$python make_bert.py
+$python tools/make_bert.py
 $python make_regression.py
 ```
 
