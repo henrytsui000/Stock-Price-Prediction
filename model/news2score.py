@@ -85,7 +85,7 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
     Dist = nn.L1Loss()
     for epoch in range(args.epochs):
         for state in ["train", "valid"]:
-            tqdm_bar = tqdm(loader[state])
+            tqdm_bar = tqdm(loader[state], leave=False)
             tqdm_bar.set_description(f"[{epoch+1}/{args.epochs}]")
             loss_list, dist_list = [], []
             for value, content in tqdm_bar:
