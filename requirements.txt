@@ -17,4 +17,6 @@ pyyaml
 transformers
 ipykernel
 python-dotenv
-
+torchinfo
+torchsummary
+tensorboardX
