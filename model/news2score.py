@@ -54,7 +54,7 @@ def make_parser():
     parser.add_argument("--lr", type=float, default=1e-5)
     parser.add_argument("--max-len", type=int, default=64)
     parser.add_argument("-d", "--device", type=str, default="cuda")
-    parser.add_argument("--data", type=str, default="./data/merge.csv")
+    parser.add_argument("--data", type=str, default="./data/train_bert.csv")
 
     return parser
 
