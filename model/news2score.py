@@ -82,11 +82,12 @@ def helper(args):
 
 def train(model, criterion, optimizer, lr_sch, writer, loader, args):
     min_loss = 1e10
+    Dist = nn.L1Loss()
     for epoch in range(args.epochs):
         for state in ["train", "valid"]:
             tqdm_bar = tqdm(loader[state])
             tqdm_bar.set_description(f"[{epoch+1}/{args.epochs}]")
-            loss_list = []
+            loss_list, dist_list = [], []
             for value, content in tqdm_bar:
                 text, mask = content["input_ids"].squeeze(1), content["attention_mask"]
                 text, mask = text.to(args.device), mask.to(args.device)
@@ -95,18 +96,22 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                 output = model(text, mask)
                 loss = criterion(output, value)
                 loss_list.append(loss.item())
+                dist = Dist(output, value)
+                dist_list.append(dist.item())
                 if state == "train":
                     optimizer.zero_grad() 
                     loss.backward()
                     optimizer.step()
                     lr_sch.step()
-            avg_loss = sum(loss_list) / (len(loss_list)*args.batch_size)
+            avg_loss = np.average(np.array(loss_list))
+            avg_dist = np.average(np.array(dist_list))
             if avg_loss < min_loss:
                 min_loss = avg_loss
                 if not os.path.exists("./pretrained"):
                     os.mkdir("./pretrained")
                 torch.save(model.state_dict(), f"./pretrained/bert_weight.pt")
-            writer.add_scalar(f"{state}-loss", avg_loss, epoch)
+            writer.add_scalar(f"{state}/loss", avg_loss, epoch)
+            writer.add_scalar(f"{state}/dist", avg_dist, epoch)
     else:
         logging.info(f"Finish Training {args.epochs} epochs with loss:{min_loss}")
 
