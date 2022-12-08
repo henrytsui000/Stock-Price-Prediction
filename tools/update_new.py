@@ -6,10 +6,10 @@ import pandas as pd
 import datetime as dt
 from tqdm import trange
 load_dotenv()
-
+# you need to get a token in marketaux.com first
 TOKEN = os.getenv('TOKEN')
 try:
-    news = pd.read_csv("../data/News/news.csv")
+    news = pd.read_csv("./data/news.csv")
 except FileNotFoundError:
     news = pd.DataFrame(columns=["symbol","date","time","uuid","match","sentiment","content"])
 API_site = "https://api.marketaux.com/v1/news/all"
@@ -54,4 +54,4 @@ for day in trange(last_day, last_day+18, desc="updateing news"):
     news = update_news(news, stocknews)
 
 print("Finish update news")
-news.to_csv("../data/News/news.csv", index=0)
+news.to_csv("./data/news.csv", index=0)

@@ -16,7 +16,6 @@ def make_parser():
 
 def check_dir():
     if not os.path.isdir("./data"): os.mkdir("./data")
-    if not os.path.isdir("./data/Stock"): os.mkdir("./data/Stock")
 
 def read_data(args):
     if os.path.isfile(args.path) and args.force :
