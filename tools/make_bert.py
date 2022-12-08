@@ -11,7 +11,7 @@ for title in ["symbol", "date", "content", "match", "sentiment"]:
     merge[title] = news[title]
 merge["score"] = news["match"] * news["sentiment"]
 
-for idx, new in tqdm(news.iterrows()):
+for idx, new in tqdm(news.iterrows(), total=news.shape[0]):
     symbol = new["symbol"].lower()
     symbol = symbol if not symbol == "googl" else "goog"
     date = new["date"]
