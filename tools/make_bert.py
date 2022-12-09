@@ -21,4 +21,4 @@ for idx, new in tqdm(news.iterrows(), total=news.shape[0]):
     if next_day in stock.index:
         merge.iloc[idx, merge.columns.get_loc('latprice')] = stock.loc[next_day][symbol]
 
-merge.to_csv("./data/train_bert.csv")
+merge.to_csv("./data/train_bert.csv", index=False)
