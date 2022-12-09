@@ -7,7 +7,7 @@ import numpy as np
 matplotlib.use('agg') 
 
 
-def get_price(path = "./data/Stock/stock.csv"):
+def get_price(path = "./data/stock.csv"):
     prices = pd.read_csv(path, index_col=0)
     return prices
 
