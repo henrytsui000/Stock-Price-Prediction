@@ -2,14 +2,12 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 from torch import nn
 import torch.nn.functional as F
-from torchsummary import summary
 from transformers import BertModel, BertTokenizer
 from tqdm import tqdm
 import numpy as np
 import pandas as pd
 from sklearn.utils import shuffle
 from tensorboardX import SummaryWriter
-from IPython.display import clear_output
 import logging
 import os
 import argparse
@@ -34,17 +32,17 @@ class Bert4price(nn.Module):
     def __init__(self, model):
         super().__init__()
         self.bert = BertModel.from_pretrained(model)
-        self.fc = nn.Sequential(
+        self.ft_fc = nn.Sequential(
             nn.Linear(768, 128),
             nn.ReLU(),
             nn.Linear(128, 16),
-            nn.ReLU(),
-            nn.Linear(16, 1)
         )
+        self.vl_fc = nn.Linear(16, 1)
     def forward(self, text, mask):
         _, output = self.bert(input_ids=text, attention_mask=mask,return_dict=False)
-        output = self.fc(output)
-        return torch.squeeze(output, 1).double()
+        feature = self.ft_fc(output)
+        output = self.vl_fc(F.relu(feature))
+        return torch.squeeze(feature, 1).double(), torch.squeeze(output, 1).double()
 
 def make_parser():
     parser = argparse.ArgumentParser()
@@ -93,7 +91,7 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                 text, mask = text.to(args.device), mask.to(args.device)
             
                 value = value.to(args.device)
-                output = model(text, mask)
+                _, output = model(text, mask)
                 loss = criterion(output, value)
                 loss_list.append(loss.item())
                 dist = Dist(output, value)
@@ -105,15 +103,14 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                     lr_sch.step()
             avg_loss = np.average(np.array(loss_list))
             avg_dist = np.average(np.array(dist_list))
-            if avg_loss < min_loss:
+            if state == "valid" and avg_loss < min_loss:
                 min_loss = avg_loss
-                if not os.path.exists("./pretrained"):
-                    os.mkdir("./pretrained")
+                if not os.path.exists("./pretrained"): os.mkdir("./pretrained")
                 torch.save(model.state_dict(), f"./pretrained/bert_weight.pt")
             writer.add_scalar(f"{state}/loss", avg_loss, epoch)
             writer.add_scalar(f"{state}/dist", avg_dist, epoch)
     else:
-        logging.info(f"Finish Training {args.epochs} epochs with loss:{min_loss}")
+        logging.info(f"Finish Training {args.epochs} epochs with loss:{min_loss:%.3f}")
 
 def main(args):
     logging.basicConfig()
