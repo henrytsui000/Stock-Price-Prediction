@@ -50,5 +50,5 @@ revised_news = revised_news.reset_index(drop=True)
 revised_news.columns = [x[0] for x in revised_news.columns]
 price_merge = price_merge.reset_index(drop=True)
 merge = pd.concat([revised_news,price_merge], axis=1)
-merge.to_csv("./data/bert_dateset.csv",index=False)
+merge.to_csv("./data/predict_dataset.csv",index=False)
 
