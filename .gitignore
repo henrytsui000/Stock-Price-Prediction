@@ -136,4 +136,5 @@ data/*
 runs/
 pretrained/
 
-src/train/E*.jpg
+src/train/test
+src/train/valid

@@ -145,11 +145,12 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                                 "opt": np.concatenate(opt_buf)}
             
             if epoch % 5 == 0:
-                img_buf = gen_dis(state, distribution)
+                img_buf = gen_dis(state, distribution, epoch)
                 img = Image.open(img_buf)
-                if not os.path.exists(args.img_path):
-                    os.mkdir(args.img_path)
-                img.save(os.path.join(args.img_path, f"E{epoch}-{state}.jpg"))
+                img_path = os.path.join(args.img_path, state)
+                if not os.path.exists(img_path):
+                    os.mkdir(img_path)
+                img.save(os.path.join(img_path, f"E{epoch}.jpg"))
                 img = ToTensor()(img)
                 writer.add_image(f'{state}/distribution', img, epoch)
             writer.add_scalar(f"{state}/loss", avg_loss, epoch)
