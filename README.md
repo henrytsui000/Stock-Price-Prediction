@@ -10,8 +10,6 @@
   - [Raw Data](#raw-data)
   - [Training Data](#training-data)
 - [Visualize Data](#visualize-data)
-  - [More Detail](#more-detail)
-  - [Correlation GIF](#correlation-gif)
 - [Fine Tune BERT](#fine-tune-bert)
 - [Go Predict](#go-predict)
 - [Experiment](#experiment)
@@ -87,11 +85,12 @@ $python make_regression.py
 
 # Visualize Data
 
-### [More Detail](visulize/README.md)
+Before we train the model, we do explore data analysis. There are some example figure below, and you can find the more detail at here. [**More Detail**](visulize/README.md)
 
-## Correlation GIF
+| Correlation GIF | News | Stock Risk |
+|-|-|-|
+|![](https://i.imgur.com/wjYecB1.gif)|![](./src/EDA/pvn.png)|![](./src/trend/risk.png)|
 
-![](./src/correlation/corr2.jpg)
 
 # Fine Tune BERT
 
