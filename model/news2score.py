@@ -85,13 +85,13 @@ def helper(args):
     logging.info("Finish Build model")
     return bert, criterion, optimizer, lr_sch, writer
 
-def gen_dis(state, data):
+def gen_dis(state, data, eps):
     """Create a pyplot plot and save to buffer."""
     plt.figure()
     plot = sns.jointplot(x="ipt", y="opt", data = data)
     plot.ax_marg_x.set_xlim(-30, 60)
     plot.ax_marg_y.set_ylim(-30, 60)
-    plot.fig.suptitle(state+ " distribution")
+    plot.fig.suptitle(f"Epochs{eps} {state} distribution")
     plt.xlabel("Ground Truth")
     plt.ylabel("Predict Value")
     buf = io.BytesIO()
@@ -143,14 +143,14 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
             
             distribution = { "ipt": np.concatenate(ipt_buf),
                                 "opt": np.concatenate(opt_buf)}
-            img_buf = gen_dis(state, distribution)
-            img = Image.open(img_buf)
-            if not os.path.exists(args.img_path):
-                os.mkdir(args.img_path)
-            img.save(os.path.join(args.img_path, f"E{epoch}.jpg"))
-            img = ToTensor()(img)
             
             if epoch % 5 == 0:
+                img_buf = gen_dis(state, distribution)
+                img = Image.open(img_buf)
+                if not os.path.exists(args.img_path):
+                    os.mkdir(args.img_path)
+                img.save(os.path.join(args.img_path, f"E{epoch}-{state}.jpg"))
+                img = ToTensor()(img)
                 writer.add_image(f'{state}/distribution', img, epoch)
             writer.add_scalar(f"{state}/loss", avg_loss, epoch)
             writer.add_scalar(f"{state}/dist", avg_dist, epoch)

@@ -114,7 +114,8 @@ Therefore, in the actual prediction, we remove the MLP and regard the BERT outpu
 
 ### Architecture
 
-
+As mentioned in the above paragraph, our bert model is shown below. First, there will be pre-trained bert (it is conceivable that we do not have enough data to do bert pre-training). Then, after the MLP constructed by myself, it is separated into feature and output, and the value obtained by output and news API is used as ground truth, and MSE loss is used for training. See **[experiment](#experiment)** for detailed training status.
+![](./src/else/bert.png)
 
 ### Train the BERT
 
@@ -128,6 +129,14 @@ $python model/news2score.py
 ```
 
 # Experiment
+
+## BERT training process
+
+
+|0 Epoch|10 Epochs|20 Epochs|30 Epochs|40 Epochs|50 Epochs|
+|-|-|-|-|-|-|
+|![](./src/train/E0.jpg)|![](./src/train/E10.jpg)|![](./src/train/E20.jpg)|![](./src/train/E30.jpg)|![](./src/train/E40.jpg)|![](./src/train/E50.jpg)|
+
 
 # Acknowledgement
 
