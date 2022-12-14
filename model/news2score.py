@@ -60,6 +60,7 @@ def make_parser():
     parser.add_argument("--max-len", type=int, default=64)
     parser.add_argument("-d", "--device", type=str, default="cuda")
     parser.add_argument("--data", type=str, default="./data/train_bert.csv")
+    parser.add_argument("--img-path", type=str, default="./src/train")
 
     return parser
 
@@ -140,14 +141,17 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                 if not os.path.exists("./pretrained"): os.mkdir("./pretrained")
                 torch.save(model.state_dict(), f"./pretrained/bert_weight.pt")
             
-            if epoch % 5 == 0 :
-                distribution = { "ipt": np.concatenate(ipt_buf),
+            distribution = { "ipt": np.concatenate(ipt_buf),
                                 "opt": np.concatenate(opt_buf)}
-                img_buf = gen_dis(state, distribution)
-                img = Image.open(img_buf)
-                img = ToTensor()(img)
-                writer.add_image(f'{state}/distribution', img, epoch)
+            img_buf = gen_dis(state, distribution)
+            img = Image.open(img_buf)
+            if not os.path.exists(args.img_path):
+                os.mkdir(args.img_path)
+            img.save(os.path.join(args.img_path, f"E{epoch}.jpg"))
+            img = ToTensor()(img)
             
+            if epoch % 5 == 0:
+                writer.add_image(f'{state}/distribution', img, epoch)
             writer.add_scalar(f"{state}/loss", avg_loss, epoch)
             writer.add_scalar(f"{state}/dist", avg_dist, epoch)
     else:
