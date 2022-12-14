@@ -135,7 +135,7 @@ $python model/news2score.py
 
 |0 Epoch|10 Epochs|20 Epochs|30 Epochs|40 Epochs|50 Epochs|
 |-|-|-|-|-|-|
-|![](./src/train/E0.jpg)|![](./src/train/E10.jpg)|![](./src/train/E20.jpg)|![](./src/train/E30.jpg)|![](./src/train/E40.jpg)|![](./src/train/E50.jpg)|
+|![](./src/train/E0.jpg)|![](./src/train/E10.jpg)|![](./src/train/E20.jpg)|![](./src/train/E30.jpg)|![](./src/train/E40.jpg)|![](./src/train/E49.jpg)|
 
 
 # Acknowledgement
