@@ -1,16 +1,23 @@
-import torch
-from torch.utils.data import Dataset, DataLoader
-from torch import nn
-import torch.nn.functional as F
-from transformers import BertModel, BertTokenizer
-from tqdm import tqdm
+import io
+import os
+
+import logging
+import argparse
 import numpy as np
 import pandas as pd
-from sklearn.utils import shuffle
+from tqdm import tqdm
+from PIL import Image
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+import torch
+from torch import nn
+from torch.utils.data import Dataset, DataLoader
+import torch.nn.functional as F
+
+from torchvision.transforms import ToTensor
+from transformers import BertModel, BertTokenizer
 from tensorboardX import SummaryWriter
-import logging
-import os
-import argparse
 
 class Stock(Dataset):
     def __init__(self, df, model, max_len) -> None:
@@ -77,19 +84,36 @@ def helper(args):
     logging.info("Finish Build model")
     return bert, criterion, optimizer, lr_sch, writer
 
+def gen_dis(state, data):
+    """Create a pyplot plot and save to buffer."""
+    plt.figure()
+    plot = sns.jointplot(x="ipt", y="opt", data = data)
+    plot.ax_marg_x.set_xlim(-30, 60)
+    plot.ax_marg_y.set_ylim(-30, 60)
+    plot.fig.suptitle(state+ " distribution")
+    plt.xlabel("Ground Truth")
+    plt.ylabel("Predict Value")
+    buf = io.BytesIO()
+    plt.savefig(buf, format='jpeg')
+    buf.seek(0)
+    plt.close()
+    return buf
+
 def train(model, criterion, optimizer, lr_sch, writer, loader, args):
     min_loss = 1e10
     Dist = nn.L1Loss()
     for epoch in range(args.epochs):
         for state in ["train", "valid", "test"]:
-            if state == "train":
-                model.train()
-            else :
-                model.eval()
+            if state == "train": model.train()
+            else: model.eval()
             tqdm_bar = tqdm(loader[state], leave=False)
             tqdm_bar.set_description(f"[{epoch+1}/{args.epochs}]")
             loss_list, dist_list = [], []
+            ipt_buf, opt_buf = [], []
+            
             for value, content in tqdm_bar:
+                ipt_buf.append(value.numpy())
+
                 text, mask = content["input_ids"].squeeze(1), content["attention_mask"]
                 text, mask = text.to(args.device), mask.to(args.device)
             
@@ -99,17 +123,31 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                 loss_list.append(loss.item())
                 dist = Dist(output, value)
                 dist_list.append(dist.item())
+                
+                output = output.cpu().detach().numpy()
+                opt_buf.append(output)
+
                 if state == "train":
                     optimizer.zero_grad() 
                     loss.backward()
                     optimizer.step()
                     lr_sch.step()
+            
             avg_loss = np.average(np.array(loss_list))
             avg_dist = np.average(np.array(dist_list))
             if state == "valid" and avg_loss < min_loss:
                 min_loss = avg_loss
                 if not os.path.exists("./pretrained"): os.mkdir("./pretrained")
                 torch.save(model.state_dict(), f"./pretrained/bert_weight.pt")
+            
+            if epoch % 5 == 0 :
+                distribution = { "ipt": np.concatenate(ipt_buf),
+                                "opt": np.concatenate(opt_buf)}
+                img_buf = gen_dis(state, distribution)
+                img = Image.open(img_buf)
+                img = ToTensor()(img)
+                writer.add_image(f'{state}/distribution', img, epoch)
+            
             writer.add_scalar(f"{state}/loss", avg_loss, epoch)
             writer.add_scalar(f"{state}/dist", avg_dist, epoch)
     else:
