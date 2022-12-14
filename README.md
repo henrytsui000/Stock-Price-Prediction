@@ -94,6 +94,19 @@ Before we train the model, we do explore data analysis. There are some example f
 
 # Fine Tune BERT
 
+## Architecture
+
+
+
+It takes about an hour to train Bert from scratch (single RTX3090).
+If the RAM is not large enough or you don’t want to train for too long, you can adjust it by modifying the parameters. The following training instructions are basic instructions for reference.
+```bash
+$conda activate IDS
+$python model/news2score.py
+# For Fast training
+# !python model/news2score.py -b 128 -e 20 --lr 5e-5
+```
+
 # Go Predict
 
 # Experiment
