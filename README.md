@@ -91,12 +91,52 @@ Before we train the model, we do explore data analysis. There are some example f
 |-|-|-|
 |![](https://i.imgur.com/wjYecB1.gif)|![](./src/EDA/pvn.png)|![](./src/trend/risk.png)|
 
-
-# Fine Tune BERT
-
 # Go Predict
 
+We attempt to use BERT's powerful language processing capabilities to increase our ability to understand the stock market to help us predict stocks. Perhaps this cannot allow us to accurately forecast stocks forever, after all, the stock market is affected by both market trading and company conditions. But we want to be able to maximize the mastery of the latter. Rather than other models blindly learning relationships between numbers that don't exist.
+
+## Data problems
+
+Then we ran into a big problem, with dozens or even hundreds of news items every day. It is irrational to use the gap between stock prices in two days as ground truth, because such good news may be defined as ordinary news.
+
+Therefore, we thought of a superb solution - we will get the evaluation of the news through the API through the official news. We first use BERT to add a simple MLP to predict the news evaluation.
+
+But it is a bit unrealistic to take the average score of each news to the final stock price forecast. What I mean is that too much news information into a single number will blur the forecast results.
+
+## Solutions!
+
+Therefore, in the actual prediction, we remove the MLP and regard the BERT output as the feature of the news. Input into the designed model to make predictions.
+
+
+
+
+## Fine Tune BERT
+
+### Architecture
+
+As mentioned in the above paragraph, our bert model is shown below. First, there will be pre-trained bert (it is conceivable that we do not have enough data to do bert pre-training). Then, after the MLP constructed by myself, it is separated into feature and output, and the value obtained by output and news API is used as ground truth, and MSE loss is used for training. See **[experiment](#experiment)** for detailed training status.
+![](./src/else/bert.png)
+
+### Train the BERT
+
+It takes about an hour to train Bert from scratch (single RTX3090).
+If the RAM is not large enough or you don’t want to train for too long, you can adjust it by modifying the parameters. The following training instructions are basic instructions for reference.
+```bash
+$conda activate IDS
+$python model/news2score.py
+# For Fast training
+# !python model/news2score.py -b 128 -e 20 --lr 5e-5
+```
+
 # Experiment
+
+## BERT training process
+
+
+|0 Epoch|10 Epochs|20 Epochs|30 Epochs|40 Epochs|50 Epochs|
+|-|-|-|-|-|-|
+|![](./src/train/E0.jpg)|![](./src/train/E10.jpg)|![](./src/train/E20.jpg)|![](./src/train/E30.jpg)|![](./src/train/E40.jpg)|![](./src/train/E49.jpg)|
+
 
 # Acknowledgement
 

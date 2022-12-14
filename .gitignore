@@ -135,3 +135,5 @@ data/*
 
 runs/
 pretrained/
+
+src/train/E*.jpg
