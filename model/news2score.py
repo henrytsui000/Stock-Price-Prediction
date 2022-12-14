@@ -49,7 +49,7 @@ def make_parser():
     parser.add_argument("-n", "--name", type=str, default="bert-base-uncased", help="model name")
     parser.add_argument("-e", "--epochs", type=int, default=50)
     parser.add_argument("-b", "--batch-size", type=int, default=128)
-    parser.add_argument("--lr", type=float, default=1e-5)
+    parser.add_argument("--lr", type=float, default=3e-5)
     parser.add_argument("--max-len", type=int, default=64)
     parser.add_argument("-d", "--device", type=str, default="cuda")
     parser.add_argument("--data", type=str, default="./data/train_bert.csv")
@@ -58,7 +58,6 @@ def make_parser():
 
 def get_loader(args):
     merge = pd.read_csv(args.data, index_col=0)
-    merge = shuffle(merge)
 
     t0, t1, t2 = np.split(merge.sample(frac=1, random_state=42), [int(.8*merge.shape[0]), int(.9*merge.shape[0])])
     dataset = {x: Stock(s, args.name, args.max_len) for x, s in [("train", t0), ("valid", t1), ("test", t2)]}
@@ -82,7 +81,11 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
     min_loss = 1e10
     Dist = nn.L1Loss()
     for epoch in range(args.epochs):
-        for state in ["train", "valid"]:
+        for state in ["train", "valid", "test"]:
+            if state == "train":
+                model.train()
+            else :
+                model.eval()
             tqdm_bar = tqdm(loader[state], leave=False)
             tqdm_bar.set_description(f"[{epoch+1}/{args.epochs}]")
             loss_list, dist_list = [], []
@@ -110,7 +113,7 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
             writer.add_scalar(f"{state}/loss", avg_loss, epoch)
             writer.add_scalar(f"{state}/dist", avg_dist, epoch)
     else:
-        logging.info(f"Finish Training {args.epochs} epochs with loss:{min_loss:%.3f}")
+        logging.info(f"Finish Training {args.epochs} epochs with loss:{min_loss:.3f}")
 
 def main(args):
     logging.basicConfig()
