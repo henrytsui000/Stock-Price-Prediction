@@ -18,7 +18,7 @@ close_time_UTC0 = close_time_USTime+5
 shift = 24-close_time_UTC0
 price_merge = pd.DataFrame()
 usdatecol = pd.DataFrame()
-for idx, new in tqdm(news.iterrows()):
+for idx, new in tqdm(news.iterrows(), total=news.shape[0]):
     date = new["date"]      # UTC+0
     times = new["time"]
     match =new["match"]
@@ -45,7 +45,7 @@ for idx, new in tqdm(news.iterrows()):
     pre3dprice = price.iloc[row.index-3][[symbol]]
     nextprice = price.iloc[row.index+1][[symbol]]
     pz = pd.concat([pre3dprice,pre2dprice,preprice,nowprice,nextprice]).T
-    pz.columns = ["pre3dprice","pre2dprice","preprice","nowprice","nextprice"]
+    pz.columns = ["pre3dprice","pre2dprice","pre1dprice","pre0dprice","nextprice"]
     price_merge = pd.concat([price_merge, pz])
 
 usdatecol.reset_index(level=0, inplace=True)

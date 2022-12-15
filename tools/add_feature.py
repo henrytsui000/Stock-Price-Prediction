@@ -15,8 +15,8 @@ def make_parser():
     parser.add_argument("--lr", type=float, default=1e-5)
     parser.add_argument("--max-len", type=int, default=64)
     parser.add_argument("-d", "--device", type=str, default="cuda")
-    parser.add_argument("--data", type=str, default="../data/predict_dataset.csv")
-    parser.add_argument("--weight", type=str, default="../pretrained/bert_weight.pt")
+    parser.add_argument("--data", type=str, default="./data/predict_dataset.csv")
+    parser.add_argument("--weight", type=str, default="./pretrained/bert_weight.pt")
 
     return parser
 args = make_parser().parse_args()
@@ -74,6 +74,6 @@ with torch.no_grad():
         value = value.to(args.device)
 
         emb, opt = model(text, mask)
-        merge.iloc[cnt:min(cnt+args.batch_size, sz), -16: -1] = emb.detach().cpu().numpy()
+        merge.iloc[cnt:min(cnt+args.batch_size, sz), -16:] = emb.detach().cpu().numpy()
         cnt += args.batch_size
-merge.to_csv("../data/new_pred.csv")
+merge.to_csv("./data/predict_dataset.csv")
