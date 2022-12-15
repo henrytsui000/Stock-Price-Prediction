@@ -74,6 +74,6 @@ with torch.no_grad():
         value = value.to(args.device)
 
         emb, opt = model(text, mask)
-        merge.iloc[cnt:min(cnt+args.batch_size, sz), 8: 24] = emb.detach().cpu().numpy()
+        merge.iloc[cnt:min(cnt+args.batch_size, sz), -16: -1] = emb.detach().cpu().numpy()
         cnt += args.batch_size
 merge.to_csv("../data/new_pred.csv")
