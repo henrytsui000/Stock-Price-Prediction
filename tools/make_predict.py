@@ -61,12 +61,12 @@ price_merge = price_merge.reset_index(drop=True)
 merge = pd.concat([revised_news,price_merge], axis=1)
 pre2dreturn = return_price(merge, "pre2dprice", "pre3dprice")
 pre1dreturn = return_price(merge, "pre1dprice", "pre2dprice")
-pre0dreturn = return_price(merge, "pre0dprice", "pre2dprice")
+pre0dreturn = return_price(merge, "pre0dprice", "pre1dprice")
 nextreturn = return_price(merge, "nextprice", "pre0dprice")
 ret = pd.concat([pre2dreturn,pre1dreturn,pre0dreturn,nextreturn],axis = 1)
 ret.columns = ["pre2dreturn","pre1dreturn","pre0dreturn","nextreturn"]
 merge = pd.concat([merge,ret],axis = 1)
-# merge.drop(["pre3dprice","pre2dprice","pre1dprice","pre0dprice","nextprice"], axis=1, inplace=True)
+merge.drop(["pre3dprice","pre2dprice","pre1dprice","pre0dprice","nextprice"], axis=1, inplace=True)
 
 merge.to_csv("./data/predict_dataset.csv",index=False)
 
