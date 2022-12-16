@@ -7,6 +7,9 @@ import time
 news = pd.read_csv("./data/news.csv")
 price = pd.read_csv("./data/stock.csv")
 
+def return_price(df,nxt,now):
+    return (df[nxt]-df[now])/df[now]
+
 revised_news = pd.DataFrame(columns=[["symbol", "date", "content", "match", "sentiment", "score"]])
 for title in ["symbol","content", "match", "sentiment"]:
     revised_news[title] = news[title]
@@ -39,20 +42,31 @@ for idx, new in tqdm(news.iterrows(), total=news.shape[0]):
             dtformat+=dt.timedelta(days=1)      #choose news between 00:00 to 23:59 in usdateindex date
             usdateindex = dt.datetime.strftime(dtformat,'%Y-%m-%d')     #update usdateindex
     row = price[price["Date"]==usdateindex]
-    nowprice = price.iloc[row.index][[symbol]]
-    preprice = price.iloc[row.index-1][[symbol]]
+    pre0dprice = price.iloc[row.index][[symbol]]
+    pre1dprice = price.iloc[row.index-1][[symbol]]
     pre2dprice = price.iloc[row.index-2][[symbol]]
     pre3dprice = price.iloc[row.index-3][[symbol]]
     nextprice = price.iloc[row.index+1][[symbol]]
-    pz = pd.concat([pre3dprice,pre2dprice,preprice,nowprice,nextprice]).T
+    pz = pd.concat([pre3dprice,pre2dprice,pre1dprice,pre0dprice,nextprice]).T
     pz.columns = ["pre3dprice","pre2dprice","pre1dprice","pre0dprice","nextprice"]
     price_merge = pd.concat([price_merge, pz])
 
+
 usdatecol.reset_index(level=0, inplace=True)
 revised_news["date"] = usdatecol[0]
+
 revised_news = revised_news.reset_index(drop=True)
 revised_news.columns = [x[0] for x in revised_news.columns]
 price_merge = price_merge.reset_index(drop=True)
 merge = pd.concat([revised_news,price_merge], axis=1)
+pre2dreturn = return_price(merge, "pre2dprice", "pre3dprice")
+pre1dreturn = return_price(merge, "pre1dprice", "pre2dprice")
+pre0dreturn = return_price(merge, "pre0dprice", "pre2dprice")
+nextreturn = return_price(merge, "nextprice", "pre0dprice")
+ret = pd.concat([pre2dreturn,pre1dreturn,pre0dreturn,nextreturn],axis = 1)
+ret.columns = ["pre2dreturn","pre1dreturn","pre0dreturn","nextreturn"]
+merge = pd.concat([merge,ret],axis = 1)
+# merge.drop(["pre3dprice","pre2dprice","pre1dprice","pre0dprice","nextprice"], axis=1, inplace=True)
+
 merge.to_csv("./data/predict_dataset.csv",index=False)
 
