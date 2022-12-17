@@ -11,7 +11,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 import torch
-from torch import nn
+from torch import nn, optim
 from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
 
@@ -79,8 +79,8 @@ def helper(args):
     bert = Bert4price(args.name)
     bert = bert.to(args.device)
     criterion = nn.MSELoss()
-    optimizer = torch.optim.Adam(bert.parameters(), lr = args.lr, weight_decay=1e-9)
-    lr_sch = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=15)
+    optimizer = optim.Adam(bert.parameters(), lr = args.lr, weight_decay=1e-9)
+    lr_sch = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=15)
     writer = SummaryWriter(comment=COMMENT)
     logging.info("Finish Build model")
     return bert, criterion, optimizer, lr_sch, writer

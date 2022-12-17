@@ -77,16 +77,17 @@ This step for transform data in news and stock to format data, easier for model 
 
 ```bash
 $python tools/make_bert.py
-$python make_regression.py
+$python tools/make_predict.py
+$python tools/add_feature.py
 ```
 
 # Visualize Data
 
 Before we train the model, we do explore data analysis. There are some example figure below, and you can find the more detail at here. [**More Detail**](visulize/README.md)
 
-| Correlation GIF | News | Stock Risk |
-|-|-|-|
-|![](https://i.imgur.com/wjYecB1.gif)|![](./src/EDA/pvn.png)|![](./src/trend/risk.png)|
+| Correlation GIF                    | News                 | Stock Risk              |
+| ---------------------------------- | -------------------- | ----------------------- |
+| ![](https://i.imgur.com/wjYecB1.gif) | ![](./src/EDA/pvn.png) | ![](./src/trend/risk.png) |
 
 # Go Predict
 
@@ -104,9 +105,6 @@ But it is a bit unrealistic to take the average score of each news to the final 
 
 Therefore, in the actual prediction, we remove the MLP and regard the BERT output as the feature of the news. Input into the designed model to make predictions.
 
-
-
-
 ## Fine Tune BERT
 
 ### Architecture
@@ -118,6 +116,7 @@ As mentioned in the above paragraph, our bert model is shown below. First, there
 
 It takes about an hour to train Bert from scratch (single RTX3090).
 If the RAM is not large enough or you don’t want to train for too long, you can adjust it by modifying the parameters. The following training instructions are basic instructions for reference.
+
 ```bash
 $conda activate IDS
 $python model/news2score.py
@@ -129,11 +128,9 @@ $python model/news2score.py
 
 ## BERT training process
 
-
-|0 Epoch|10 Epochs|20 Epochs|30 Epochs|40 Epochs|50 Epochs|
-|-|-|-|-|-|-|
-|![](./src/train/train/E0.jpg)|![](./src/train/train/E10.jpg)|![](./src/train/train/E20.jpg)|![](./src/train/train/E30.jpg)|![](./src/train/train/E40.jpg)|![](./src/train/train/E45.jpg)|
-
+| 0 Epoch                     | 10 Epochs                    | 20 Epochs                    | 30 Epochs                    | 40 Epochs                    | 50 Epochs                    |
+| --------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
+| ![](./src/train/train/E0.jpg) | ![](./src/train/train/E10.jpg) | ![](./src/train/train/E20.jpg) | ![](./src/train/train/E30.jpg) | ![](./src/train/train/E40.jpg) | ![](./src/train/train/E45.jpg) |
 
 # Acknowledgement
 

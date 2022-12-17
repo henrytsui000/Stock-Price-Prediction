@@ -8,7 +8,7 @@ news = pd.read_csv("./data/news.csv")
 price = pd.read_csv("./data/stock.csv")
 
 def return_price(df,nxt,now):
-    return (df[nxt]-df[now])/df[now]
+    return (df[nxt]-df[now])*100/df[now]
 
 revised_news = pd.DataFrame(columns=[["symbol", "date", "content", "match", "sentiment", "score"]])
 for title in ["symbol","content", "match", "sentiment"]:
