@@ -50,7 +50,7 @@ After we draw the price in 2 months and 1.5 years, we found that every stock has
 ### FAANG's Candlestick Chart
 |        | <center>Figure</center>|
 | ------ | -------------------- |
-| META| ![](../src/EDA/FB_price.png) |
+| META| ![](../src/EDA/META_price.png) |
 |AMZN|![](../src/EDA/AMZN_price.png)|
 |AAPL|![](../src/EDA/AAPL_price.png)|
 |NFLX|![](../src/EDA/NFLX_price.png)|
