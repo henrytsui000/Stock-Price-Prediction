@@ -19,6 +19,8 @@ from torchvision.transforms import ToTensor
 from transformers import BertModel, BertTokenizer
 from tensorboardX import SummaryWriter
 
+plt.style.use('dark_background')
+
 class Stock(Dataset):
     def __init__(self, df, model, max_len) -> None:
         self.df = df
@@ -54,7 +56,7 @@ class Bert4price(nn.Module):
 def make_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("-n", "--name", type=str, default="bert-base-uncased", help="model name")
-    parser.add_argument("-e", "--epochs", type=int, default=50)
+    parser.add_argument("-e", "--epochs", type=int, default=51)
     parser.add_argument("-b", "--batch-size", type=int, default=128)
     parser.add_argument("--lr", type=float, default=3e-5)
     parser.add_argument("--max-len", type=int, default=64)
@@ -95,7 +97,8 @@ def gen_dis(state, data, eps):
     plt.xlabel("Ground Truth")
     plt.ylabel("Predict Value")
     buf = io.BytesIO()
-    plt.savefig(buf, format='jpeg')
+    plt.savefig(buf, format='jpeg', transparent = True)
+    plt.savefig(f"./src/train/{state}/E{eps}.png", transparent = True)
     buf.seek(0)
     plt.close()
     return buf
@@ -150,7 +153,7 @@ def train(model, criterion, optimizer, lr_sch, writer, loader, args):
                 img_path = os.path.join(args.img_path, state)
                 if not os.path.exists(img_path):
                     os.mkdir(img_path)
-                img.save(os.path.join(img_path, f"E{epoch}.jpg"))
+                # img.save(os.path.join(img_path, f"E{epoch}.jpg"))
                 img = ToTensor()(img)
                 writer.add_image(f'{state}/distribution', img, epoch)
             writer.add_scalar(f"{state}/loss", avg_loss, epoch)
