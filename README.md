@@ -14,7 +14,7 @@
 
 # About
 
-This is a side project create by Lucy's and me, the main idea is use Bert model for fuse the stock news title and past stock price to predict the stock price in the future.
+This is a side project create by Lucy and me, the main idea is use Bert model for fuse the stock news title and past stock price to predict the stock price in the future.
 
 What we notice when investing in stocks is that in addition to observing the past values of stocks and short-term changes in stocks. We also refer to the news of the stock market, that is, we refer to the buying and selling conditions of other investors or the operating conditions of the company. This is why simple models such as LSTM or DNN will be inaccurate in stock forecasting - it loses the fundamental value of the stock.
 
@@ -85,9 +85,13 @@ $python tools/add_feature.py
 
 Before we train the model, we do explore data analysis. There are some example figure below, and you can find the more detail at here. [**More Detail**](visulize/README.md)
 
-| Correlation GIF                    | News                 | Stock Risk              |
+| Correlation GIF                    | News                 | News mounts              |
 | ---------------------------------- | -------------------- | ----------------------- |
-| ![](https://i.imgur.com/wjYecB1.gif) | ![](./src/EDA/pvn.png) | ![](./src/trend/risk.png) |
+| ![](https://i.imgur.com/wjYecB1.gif) | ![](./src/EDA/pvn.png) | ![](./src/EDA/mount_new.png) |
+
+| Stock Price                    | News                 | Stock Risk              |
+| ---------------------------------- | -------------------- | ----------------------- |
+| ![](./src/EDA/AMZN_price.png) | ![](./src/predict/price.png) | ![](./src/trend/risk.png) |
 
 # Go Predict
 
@@ -112,7 +116,7 @@ Therefore, in the actual prediction, we remove the MLP and regard the BERT outpu
 As mentioned in the above paragraph, our bert model is shown below. First, there will be pre-trained bert (it is conceivable that we do not have enough data to do bert pre-training). Then, after the MLP constructed by myself, it is separated into feature and output, and the value obtained by output and news API is used as ground truth, and MSE loss is used for training. See **[experiment](#experiment)** for detailed training status.
 ![](./src/else/bert.png)
 
-### Train the BERT
+### Train the BERT model
 
 It takes about an hour to train Bert from scratch (single RTX3090).
 If the RAM is not large enough or you don’t want to train for too long, you can adjust it by modifying the parameters. The following training instructions are basic instructions for reference.
@@ -124,13 +128,49 @@ $python model/news2score.py
 # !python model/news2score.py -b 128 -e 20 --lr 5e-5
 ```
 
+### Train the Prediction model
+
+It's only take 1 minutes for training the prediction DNN model.
+Run the ipynb script could run the training process.
+
+```bash
+# Just run model/score2price.ipynb
+```
+
+### Inference
+Finally, we will get the two models weight. And use inference script would turn the stock price and news to predict price!
+
+Use this command counld inference our testing data!
+```bash
+$python model/inference.py
+```
+
+### Results
+
+For visiualize data, run tools/predict.ipynb would visualize the data which just finish inferece on last chapter.
+![](./src/predict/price.png)
+
 # Experiment
 
 ## BERT training process
 
+Finetuning pretrained bert weight from huggingface.
+Input is news title, and output is features of news(dimension = 16).
+We also use news scores from Martex.com as ground truth to train.
+Scatter plots below is our predict news score v.s. ground truth news score during training process.
+
 | 0 Epoch                     | 10 Epochs                    | 20 Epochs                    | 30 Epochs                    | 40 Epochs                    | 50 Epochs                    |
 | --------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
-| ![](./src/train/train/E0.jpg) | ![](./src/train/train/E10.jpg) | ![](./src/train/train/E20.jpg) | ![](./src/train/train/E30.jpg) | ![](./src/train/train/E40.jpg) | ![](./src/train/train/E45.jpg) |
+| ![](./src/train/train/E0.png) | ![](./src/train/train/E10.png) | ![](./src/train/train/E20.png) | ![](./src/train/train/E30.png) | ![](./src/train/train/E40.png) | ![](./src/train/train/E50.png) |
+
+## DNN predict stock returns training process
+Getting MSE and MAE Loss of other model and our model. We can see in belaow chart, our model has better performance than others.
+| Method   |  MSE  |  MAE  | 
+| -------- | ------ | ------ | 
+| LSTM | 9.85 | 6.83 | 
+| Shifting | 9.89 | 6.18 | 
+| **Our Model** | **6.21** | **4.14** | 
+
 
 # Acknowledgement
 
